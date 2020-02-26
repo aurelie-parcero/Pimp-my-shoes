@@ -1,6 +1,10 @@
 
+<<<<<<< HEAD
 @include('header')
 
+=======
+    <body>
+>>>>>>> 066a923eb9dd27ace96c3835eadfb94660a66ad3
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

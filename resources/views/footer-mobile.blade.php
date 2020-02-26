@@ -11,7 +11,7 @@
             <i class="fab fa-twitter"><a href="http://www.twitter.com"></a></i>
         </div>
 
-        <div>
+        <div class="footer-blue">
             <div>
 
             </div>

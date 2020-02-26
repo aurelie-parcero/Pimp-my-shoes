@@ -7,10 +7,17 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    padding: 40px 50px;
 
 }
 .social_media_mobile i {
 
     color: #183549;
-    font-size: 80px;
+    font-size: 35px;
+}
+
+.footer-blue {
+    background-color: #183549;
+    margin: 0;
+    padding:0;
 }
