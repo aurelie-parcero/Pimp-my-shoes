@@ -26,7 +26,3 @@ Route::get('/products', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
-
-Route::get('/welcom', function ($nomPage) {
-
-});
