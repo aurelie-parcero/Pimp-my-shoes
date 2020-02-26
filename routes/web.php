@@ -27,3 +27,6 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
+Route::get('/header', function () {
+    return view('header');
+});
