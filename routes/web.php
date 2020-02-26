@@ -15,15 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Product/{id}', function ($id) {
-    return view('Product',['id'=>$id]);
+Route::get('/product/{id}', function ($id) {
+    return view('product',['id'=>$id]);
 });
 
-Route::get('/Products', function () {
-    return view('Products');
+Route::get('/products', function () {
+    return view('products');
 });
 
-Route::get('/Cart', function () {
-    return view('Cart');
+Route::get('/cart', function () {
+    return view('cart');
 });
 
