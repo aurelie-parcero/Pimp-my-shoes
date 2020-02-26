@@ -2,8 +2,15 @@
     border-top: #d6d6d6 1px solid;
 
 }
+.social_media_mobile {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
 .social_media_mobile i {
 
     color: #183549;
-    height: ;
+    font-size: 80px;
 }
