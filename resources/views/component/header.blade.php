@@ -1,7 +1,7 @@
 <header>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark banner">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#"><img src="{{ asset('storage/element_ressource/logo/header_mobile_police_blanche.png') }}"
+    <a class="navbar-brand" href="#"><img src="{{ asset('element_ressource/logo/header_mobile_police_blanche.png') }}"
                                           style="width:150px;"/></a>
 
 
@@ -25,12 +25,13 @@
     <div class="collapse navbar-collapse text-right" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto flex-nowrap d-md-none"style="flex-direction: column">
             <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item nav-active">Femme</a>
+                <a href="#" class="nav-link m-2 menu-item nav-active">Link1</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">Homme</a>
+                <a href="#" class="nav-link m-2 menu-item">Link2</a>
             </li>
         </ul>
     </div>
+
 </nav>
 </header>

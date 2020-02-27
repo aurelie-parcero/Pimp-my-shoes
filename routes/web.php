@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('page/welcome');
 });
 
 Route::get('/product/{id}', function ($id) {
@@ -26,3 +26,5 @@ Route::get('/products', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+
+
