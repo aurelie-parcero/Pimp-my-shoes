@@ -19,7 +19,6 @@
 
     <div class="footer-blue">
 
-
         <div class="footer-mobile-info container col-10">
             <div class="element-footer-mobile">
                 <img alt="livraison" class="icone-footer"
@@ -33,9 +32,12 @@
             </div>
         </div>
 
+        <div class="container border_footer_large">
+        </div>
+
 
         <div class="mentions_bas_page">
-            <p class="mention-border">Mentions Légales</p>
+            <p>Mentions Légales</p>
             <p class="mention-border">CGV</p>
             <p>Protections des données</p>
         </div>
