@@ -90,3 +90,24 @@
 .bouton-haut {
     text-align: right;
 }
+
+/* Header styles
+-------------------------------------------------- */
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-collapse {
+        display: none!important;
+    }
+}
+
+.nav-item {
+    padding-right: 20px;
+}
