@@ -1,7 +1,5 @@
 
 <<<<<<< HEAD
-@include('header')
-
 =======
     <body>
 >>>>>>> 066a923eb9dd27ace96c3835eadfb94660a66ad3
@@ -40,7 +38,7 @@
 
                     Nunc gravida augue eget suscipit semper.             </p>
 
-                @include('button')
+                @include('component.button')
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
@@ -55,4 +53,4 @@
             </div>
         </div>
 
-    @include('footer-mobile')
+    @include('component.footer-mobile')

@@ -1,6 +1,6 @@
-@include('header')
+@include('component.header')
+
+@yield()
 
 
-
-
-@include('footer-mobile')
+@include('component.footer-mobile')
