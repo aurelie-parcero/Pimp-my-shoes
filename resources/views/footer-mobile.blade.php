@@ -11,14 +11,21 @@
             <i class="fab fa-twitter"><a href="http://www.twitter.com"></a></i>
         </div>
 
-        <div class="footer-blue">
-            <div>
-
+        <div class="footer-blue col-lg-12">
+            <div class="footer-mobile-info">
+                <div class= "element-footer-mobile col-sm-4">
+                    <img class="icone-footer" src="{{asset('element_ressource/icones/footer_truck.svg')}}"/>
+                    <p class="text-footer-mobile">Livraison gratuite dès 59€</p>
+                </div>
+                <div class="element-footer-mobile col-sm-4">
+                    <img class="icone-footer" src="{{asset('element_ressource/icones/footer_lock.svg')}}"/>
+                    <p class="text-footer-mobile">Paiement 100% sécurisé</p>
+                </div>
             </div>
 
             <div class="mentions_bas_page">
-                <p>Mentions Légales</p>
-                <p>CGV</p>
+                <p class="mention-border">Mentions Légales</p>
+                <p class="mention-border">CGV</p>
                 <p>Protections des données</p>
             </div>
 
