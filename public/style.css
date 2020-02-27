@@ -111,3 +111,9 @@
 .nav-item {
     padding-right: 20px;
 }
+
+.banner{
+    background-image: url(storage/element_ressource/images/background.jpg);
+    background-size: 100%;
+    /*background-position: ;*/
+}
