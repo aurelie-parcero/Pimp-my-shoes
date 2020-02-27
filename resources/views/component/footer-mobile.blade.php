@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class="container border_footer_large">
+        <div class="container border_footer">
         </div>
 
 
