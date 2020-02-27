@@ -1,6 +1,13 @@
 @font-face {
     font-family: "Orkney Light";
     src: url("storage/element_ressource/Polices/Orkney/Orkney Light.ttf") format("ttf");
+    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.otf") format("otf");
+    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.woff") format("woff");
+    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.woff2") format("woff2");
+    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.eot") format("eot");
+
+
+
 }
 
 @font-face {
@@ -8,8 +15,12 @@
     src: url("storage/element_ressource/Polices/Ailerons/Ailerons-Regular.otf") format("otf");
 }
 
+
+* {
+    font-family: "Orkney Light";
+}
 /* Footer Mobile */
-.footer-mobile {
+footer {
     margin: 0;
     padding: 0;
     font-family: 'Orkney Light';
@@ -84,6 +95,24 @@
 }
 
 /*Fin Footer Mobile */
+
+/*Footer Desktop */
+
+.social_media_desktop {
+    color: #E8A14A;
+}
+
+.footer-desktop-info{
+    border-right: #d6d6d6 1px solid;
+
+}
+
+.icone-footer-desk {
+    max-height: 39px;
+    max-width: 39px;
+}
+
+/* Fin Footer Desktop */
 
 /*Bouton retour haut*/
 
