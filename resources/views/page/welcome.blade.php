@@ -1,5 +1,5 @@
 
-@include('header')
+@include('component.header')
 
     <body>
 
