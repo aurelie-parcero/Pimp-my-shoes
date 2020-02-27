@@ -1,5 +1,10 @@
 
+<<<<<<< HEAD
+@include('header')
+
+=======
     <body>
+>>>>>>> 066a923eb9dd27ace96c3835eadfb94660a66ad3
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -21,15 +26,19 @@
                 </div>
 
                 <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac velit erat. Mauris vulputate quam eget tincidunt euismod. Etiam bibendum, elit nec consectetur finibus, ex mi imperdiet ligula, id aliquam dolor arcu in risus. Donec vitae leo augue. Nunc vehicula faucibus consectetur. Integer finibus sapien sapien, vel varius turpis viverra eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi congue bibendum augue, non elementum nisl semper sed. Donec sed mi nec tortor aliquam lacinia convallis eu purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis mauris est, ullamcorper sit amet rutrum quis, pharetra id ex.
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus sodales erat vel tempor. Proin laoreet sagittis ante ac tincidunt. Nunc mauris dolor, pretium vitae scelerisque vel, facilisis sit amet orci. Cras sed sem fringilla, blandit ligula id, bibendum elit. Vestibulum interdum justo justo, sed lacinia dui hendrerit ac. Etiam vitae vehicula nulla. Sed efficitur, risus in fringilla luctus, lacus elit dictum sapien, sit amet posuere tortor ante ac elit. Sed eget consequat magna. Ut vel pulvinar dolor. Integer gravida, nulla varius rutrum sagittis, justo lorem ultricies odio, eget molestie magna magna non sapien. Donec tincidunt velit ut porttitor porttitor. Proin scelerisque fringilla mattis.
+                    Pellentesque a eleifend ex. Vestibulum cursus in sem ornare elementum. Proin ornare tellus vel arcu porta, ornare fringilla risus varius. Ut dapibus erat velit, vitae porttitor felis auctor non. Aliquam a convallis nisl. Donec interdum nulla ut euismod commodo. Nulla non tortor dui. Sed blandit felis vel magna posuere, sed venenatis magna convallis. Ut iaculis vel eros vitae vulputate. Suspendisse vestibulum lacus urna. Nam mattis tellus eget nunc gravida, in porta est venenatis.
 
-                Curabitur a arcu urna. Pellentesque placerat placerat orci, id rhoncus velit tristique ac. Integer euismod rhoncus fringilla. Nunc ac mi porttitor, luctus ipsum non, volutpat nibh. Integer vitae ligula tempus, luctus nunc at, eleifend tortor. Nullam varius, justo ut molestie finibus, lectus velit hendrerit est, vel laoreet nibh arcu finibus felis. Fusce sed nunc malesuada, interdum est vel, viverra sapien. Integer tempor fermentum neque, a pulvinar diam semper sit amet. Quisque rutrum iaculis neque ac viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Proin tristique augue imperdiet congue fermentum. Ut vitae commodo diam. Pellentesque ultricies volutpat turpis sit amet hendrerit. Pellentesque tincidunt pretium ligula, quis faucibus ipsum placerat ac. Donec euismod imperdiet mi et euismod. Nulla viverra urna vitae risus tempus, vitae ornare nibh fringilla. Integer et augue leo.
 
-                Donec ac risus dignissim turpis laoreet rhoncus quis vitae felis. Vestibulum vel arcu nibh. Curabitur eget commodo tortor. Nam iaculis, mauris et iaculis consequat, quam arcu mollis erat, sit amet elementum eros enim ut quam. Vestibulum ut efficitur ante, vitae interdum tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis varius, mi eget tincidunt ullamcorper, erat magna ultricies ipsum, id fringilla diam mauris in elit. Pellentesque interdum dapibus odio, ullamcorper luctus metus fringilla non. Suspendisse suscipit suscipit rhoncus. Nulla condimentum fermentum rhoncus. Suspendisse potenti. Nullam convallis tortor quis ullamcorper aliquam. Aliquam condimentum tortor mi, quis dictum lorem dictum eget. Nullam convallis dui ac augue tristique, ac consectetur nibh dignissim.
+                    Cras faucibus quis orci sit amet gravida. Proin elementum magna non arcu venenatis, id imperdiet dui commodo. Proin mattis iaculis dui viverra mattis. Pellentesque mollis ornare tellus, vel condimentum purus ornare vel. Cras mi arcu, dictum id ultrices vel, egestas ac quam. Morbi nulla metus, dapibus in egestas a, tempus et ipsum. Aenean sodales ante a nulla tempor aliquet. Phasellus suscipit magna in suscipit lobortis. Morbi ut leo eget arcu mollis tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas quis ligula ante. Praesent in ex non massa scelerisque viverra quis ut nibh. Etiam eleifend odio eros, eu imperdiet mauris mollis at.
 
-                Etiam eleifend lorem vitae condimentum suscipit. Maecenas fringilla, est a tincidunt mattis, orci nisi hendrerit lacus, nec rhoncus massa massa vel dolor. Suspendisse posuere tempus sem, ac pulvinar velit viverra vitae. In auctor convallis felis quis lobortis. Nam mattis felis nec lacus commodo, ac facilisis nulla egestas. Morbi at bibendum purus. In accumsan vitae tellus semper dapibus. Praesent id interdum nunc, non tempor libero. Vivamus malesuada convallis imperdiet. Vivamus volutpat tincidunt augue, vel sollicitudin ligula finibus nec. Praesent ut neque non mauris porttitor ultricies. Maecenas lobortis lectus vitae velit eleifend cursus.
-                </p>
+                    Fusce nec justo leo. Sed malesuada sapien non interdum dignissim. Etiam vehicula, risus et consectetur dapibus, mauris sem rutrum nibh, quis finibus lorem quam vitae leo. Integer vitae sem tortor. Morbi mollis luctus velit vel hendrerit. Proin in metus elit. Vivamus id volutpat turpis. Nullam ac ligula sagittis, faucibus elit ut, tristique enim.
+
+                    Praesent consectetur eleifend dui non facilisis. Sed eget mauris vel metus laoreet elementum. Praesent sollicitudin, lectus eget laoreet accumsan, dui arcu tempor lacus, et bibendum elit nisl at lectus. Proin vel nisi risus. Suspendisse et risus et urna tincidunt malesuada. Nulla cursus ipsum ac tellus efficitur, a sagittis risus tincidunt. Sed ac leo nec erat accumsan mattis at non purus. Aliquam vestibulum justo sapien, maximus sodales velit ornare sed. Mauris lobortis ullamcorper nulla sit amet molestie. Aliquam dictum in nibh a bibendum. Nunc luctus felis ut ultrices pharetra. Sed tempor imperdiet quam eget vulputate. Phasellus ultricies venenatis urna. Praesent varius felis eget velit consequat dictum. In metus purus, hendrerit eget odio et, porttitor ultricies lacus.
+
+                    Nunc gravida augue eget suscipit semper.             </p>
 
                 @include('button')
 
