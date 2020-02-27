@@ -1,7 +1,7 @@
 <header>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#"><img src="{{ asset('element_ressource/logo/header_mobile_police_blanche.png') }}"
+    <a class="navbar-brand" href="#"><img src="{{ asset('storage/element_ressource/logo/header_mobile_police_blanche.png') }}"
                                           style="width:150px;"/></a>
 
 

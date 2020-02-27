@@ -1,25 +1,5 @@
 @extends('layouts.app')
 
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Accueil
-                </div>
-
                 @section('contenu')
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac velit erat. Mauris vulputate quam eget tincidunt euismod. Etiam bibendum, elit nec consectetur finibus, ex mi imperdiet ligula, id aliquam dolor arcu in risus. Donec vitae leo augue. Nunc vehicula faucibus consectetur. Integer finibus sapien sapien, vel varius turpis viverra eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi congue bibendum augue, non elementum nisl semper sed. Donec sed mi nec tortor aliquam lacinia convallis eu purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis mauris est, ullamcorper sit amet rutrum quis, pharetra id ex.
