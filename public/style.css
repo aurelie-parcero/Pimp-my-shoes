@@ -1,32 +1,35 @@
 @font-face {
     font-family: "Orkney";
-    src: url("/storage/app/public/element_ressource/Polices/Orkney/Orkney Regular.otf") format("otf"),
-    url("/storage/app/public/element_ressource/Polices/Orkney/Orkney Regular.ttf") format("ttf");
+    src: url("./storage/element_ressource/Polices/Orkney/Orkney_Regular.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Ailerons";
-    src: url("/element_ressource/Polices/Ailerons/Ailerons-Regular.otf") format("otf");
+    src: url("storage/element_ressource/Polices/Ailerons/Ailerons-Regular.otf") format("otf");
 }
 
 /* Footer Mobile */
-footer {
-    margin:0;
+.footer-mobile {
+    margin: 0;
     padding: 0;
+    font-family: 'Orkney';
 }
+
 .border_footer {
     border-top: #d6d6d6 1px solid;
-    width: 90%;
+    width: 85%;
+    align-self: center;
 
 }
+
 .social_media_mobile {
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-around;
-    padding: 30px 60px;
-
+    padding: 25px 15px;
 }
+
 .social_media_mobile i {
 
     color: #183549;
@@ -36,12 +39,12 @@ footer {
 .footer-blue {
     background-color: #183549;
     margin: 0;
-    padding:0;
+    padding: 0;
     color: white;
 }
 
 .footer-mobile-info {
-    font-family: Orkney;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -50,14 +53,17 @@ footer {
 }
 
 .element-footer-mobile {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    margin-top:10px;
+
 }
 
 .element-footer-mobile img {
 
     max-height: 43px;
     max-width: 43px;
+    margin: 5px;
+
 }
 
 .mentions_bas_page {
@@ -65,12 +71,17 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: Ailerons;
+
 }
 
 .mention-border {
     border-right: #d6d6d6 1px solid;
-    margin: 10px 20px;
 }
 
 /*Fin Footer Mobile */
+
+/*Bouton retour haut*/
+
+.bouton-haut {
+    text-align: right;
+}
