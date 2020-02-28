@@ -14,6 +14,12 @@
 </head>
 <body>
 
+{{--mettre par défaut un élément--}}
+{{--@section("header")--}}
+{{--    @include('')--}}
+{{--@endsection--}}
+{{--@yield('header')--}}
+
 @include('component.header')
 
 @yield('titre')

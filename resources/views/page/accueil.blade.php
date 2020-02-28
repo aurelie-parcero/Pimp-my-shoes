@@ -4,6 +4,10 @@
 
 @section('titre', 'Nos produits')
 
+{{--afficher par défaut un élément - voir com dans app.blade--}}
+{{--@section("header")--}}
+{{--    @include('component.header')--}}
+{{--@endsection--}}
 
 @section('contenu')
     <div class="container">
