@@ -1,4 +1,5 @@
-@extends('layouts.app')
+
+
 
                 @section('contenu')
                 <p>

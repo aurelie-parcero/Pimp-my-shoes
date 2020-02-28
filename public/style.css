@@ -28,7 +28,7 @@ footer {
 
 .border_footer {
     border-top: #d6d6d6 1px solid;
-    width: 85%;
+    width: 93%;
 
 }
 
@@ -74,24 +74,28 @@ footer {
     margin: 5px;
 
 }
-
-.border_footer_large {
-    border-top: #d6d6d6 1px solid;
-    width: 92%;
+.text-footer-mobile{
+    padding: 5px;
 }
+
 .mentions_bas_page {
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: "Ailerons";
-    padding: 10px 5px;
-}
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
 
+}
+.mentions_bas_page p {
+
+    padding: 0 10px;
+}
 .mention-border {
     border-left: #d6d6d6 1px solid;
     border-right: #d6d6d6 1px solid;
-    padding: 0 15px;
 }
 
 /*Fin Footer Mobile */

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -14,9 +14,9 @@
 
 @include('component.header')
 
-@yield('contenu')
-
 @include('component.button')
+
+@yield('page.contenu')
 
 @include('component.footer-mobile')
 @include('component.footer-desktop')
@@ -32,5 +32,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
 </body>
 </html>
