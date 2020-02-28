@@ -14,9 +14,9 @@
 
 @include('component.header')
 
-@include('component.button')
-
 @yield('page.contenu')
+
+@include('component.button')
 
 @include('component.footer-mobile')
 @include('component.footer-desktop')

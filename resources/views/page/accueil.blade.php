@@ -1,7 +1,7 @@
+@extends('layouts.app')
 
 
-
-                @section('contenu')
+                @section('page.contenu')
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac velit erat. Mauris vulputate quam eget tincidunt euismod. Etiam bibendum, elit nec consectetur finibus, ex mi imperdiet ligula, id aliquam dolor arcu in risus. Donec vitae leo augue. Nunc vehicula faucibus consectetur. Integer finibus sapien sapien, vel varius turpis viverra eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi congue bibendum augue, non elementum nisl semper sed. Donec sed mi nec tortor aliquam lacinia convallis eu purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis mauris est, ullamcorper sit amet rutrum quis, pharetra id ex.
 
@@ -17,4 +17,4 @@
 
                     Nunc gravida augue eget suscipit semper.             </p>
 
-                    @endsection
+                @endsection
