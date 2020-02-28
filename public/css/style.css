@@ -102,10 +102,10 @@ footer {
 
 /*Footer Desktop */
 @media only screen  and (min-width: 767px) {
-    /*.container{
+    #icone-sociale_footer{
         display: flex;
         justify-content: space-between;
-    }*/
+    }
     #icone_info_footer {
         display: flex;
         flex-flow: row;
@@ -132,6 +132,10 @@ footer {
         max-height: 100px;
         max-width: 100px;
 
+    }
+    .logo-footer-desk{
+        height: 70px;
+        width: 60%;
     }
 }
 /* Fin Footer Desktop */

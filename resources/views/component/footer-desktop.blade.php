@@ -7,17 +7,17 @@
         <div id="icone_info_footer" class="footer-desktop-info item">
             <div class="col-6">
                 <img alt="livraison gratuite" class="icone-footer-desk-truck"
-                     src="{{asset('storage/element_ressource/icones/footer_truck_ylw.png')}}"/>
+                     src="{{asset('icones/footer_truck_ylw.png')}}"/>
                 <p class="text-footer-desk">Livraison gratuite dès 59€</p>
             </div>
             <div class="col-6">
                 <img alt="paiement sécurisé" class="icone-footer-desk-lock"
-                     src="{{asset('storage/element_ressource/icones/footer_lock_ylw.png')}}"/>
+                     src="{{asset('icones/footer_lock_ylw.png')}}"/>
                 <p class="text-footer-desk">Paiement 100% sécurisé</p>
             </div>
             <div class="col-6">
                 <img alt="livraison rapide" class="icone-footer-desk-clock"
-                     src="{{asset('storage/element_ressource/icones/footer_clock_ylw.png')}}"/>
+                     src="{{asset('icones/footer_clock_ylw.png')}}"/>
                 <p class="text-footer-desk">Livré en 5 à 7 jours</p>
             </div>
 
@@ -49,7 +49,7 @@
             </div>
             <div class="logo-footer-desk">
                 <img
-                    src="{{asset('storage/element_ressource/logo/footer_desktop_police_blanche.png')}}" alt="Pimp my shoes"/>
+                    src="{{asset('logo/footer_desktop_police_blanche.png')}}" alt="Pimp my shoes"/>
             </div>
 
             <div class="mentions-droite">
