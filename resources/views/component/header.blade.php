@@ -13,6 +13,7 @@
                 <a class="nav-link" href="#"><i class="fas fa-shopping-bag fa-2x" style="padding-top: 5px"></i></a>
             </li>
             <li>
+                <!-- Toggler/collapsibe Button -->
                 <div class="toggler d-md-none" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <svg viewBox="0 0 800 600">
                         <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
@@ -22,14 +23,6 @@
                 </div>
             </li>
         </ul>
-
-
-    <!-- Toggler/collapsibe Button -->
-{{--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">--}}
-{{--        <span class="navbar-toggler-icon"></span>--}}
-{{--    </button>--}}
-
-
 
     <!-- Navbar links -->
 
@@ -44,6 +37,9 @@
         </ul>
     </div>
 
+    <a class="navbar-nav; nav-link; slogan">
+        Be unique<br> Be you<br> Pimp your shoes
+    </a>
 </nav>
 </header>
 

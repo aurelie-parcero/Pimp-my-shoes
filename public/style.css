@@ -146,12 +146,20 @@ footer {
     }
 }
 
+.slogan {
+    color: rgba(255, 255, 255, 1)!important;
+    bottom: 10px;
+    position: absolute;
+    font-family: ;
+    font-size: xx-large;
+}
+
 .paddingr20 {
     padding-right: 30px;
 }
 
 .banner{
-    background-image: url(storage/element_ressource/images/backgroundtext.png);
+    background-image: url(storage/element_ressource/images/backgroundfilter.png);
     background-size: cover;
     background-position: center;
     height: 396px;
