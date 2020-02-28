@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -14,11 +14,12 @@
 
 @include('component.header')
 
+@yield('titre')
 
-@yield('page.contenu')
+@yield('contenu')
 
 @include('component.button')
-@if()
+
 @include('component.footer-mobile')
 @include('component.footer-desktop')
 
