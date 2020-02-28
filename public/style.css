@@ -1,29 +1,29 @@
 @font-face {
     font-family: "Orkney Light";
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.ttf") format("ttf");
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.otf") format("otf");
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.woff") format("woff");
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.woff2") format("woff2");
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.eot") format("eot");
-
-
-
+    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.ttf") format("ttf"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.otf") format("otf"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.woff") format("woff"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.woff2") format("woff2"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.eot") format("eot");
 }
 
 @font-face {
-    font-family: "Ailerons";
-    src: url("storage/element_ressource/Polices/Ailerons/Ailerons-Regular.otf") format("otf");
+    font-family: 'aileronregular';
+    src: url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.eot');
+    src: url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.woff') format('woff'),
+    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.ttf') format('truetype'),
+    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
-* {
-    font-family: "Orkney Light";
-}
 /* Footer Mobile */
 footer {
     margin: 0;
     padding: 0;
-    font-family: 'Orkney Light';
+    font-family: 'Orkney Light', sans-serif;
 }
 
 .border_footer {
@@ -83,7 +83,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: "Ailerons";
+    font-family: "Ailerons", sans-serif;
     padding: 10px 0;
     text-align: center;
     font-size: 14px;
