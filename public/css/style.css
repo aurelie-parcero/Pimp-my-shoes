@@ -139,20 +139,34 @@ footer {
 
 }
 
-@media (min-width: 768px){
-    .navbar-expand-md .navbar-collapse {
-        display: none!important;
-    }
+.posLogo {
+    height:157px;
+    width: 189px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px
 }
-
 
 .slogan {
     color: rgba(255, 255, 255, 1)!important;
     bottom: 10px;
     position: absolute;
     font-family: "Ailerons", sans-serif;
-    font-size: xx-large;
+    font-size: 28px;
 }
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: none !important;
+    }
+
+    .slogan {
+        font-size: 40px;
+        left: 300px;
+        font-family: "Ailerons", sans-serif;
+    }
+}
+
 
 .paddingr20 {
     padding-right: 30px;
