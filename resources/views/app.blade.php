@@ -15,7 +15,7 @@
 <body>
 
 @include('component.header')
-
+@yield('introduction')
 @yield('titre')
 
 @yield('contenu')
