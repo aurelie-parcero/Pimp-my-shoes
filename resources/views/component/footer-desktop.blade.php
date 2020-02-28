@@ -3,27 +3,27 @@
     <div class="container border_footer">
     </div>
 
-    <div class="footer-desk-yellow container">
-        <div class="footer-desktop-info">
-            <div>
-                <img alt="livraison gratuite" class="icone-footer-desk"
+    <div id="icone_footer" class="footer-desk-yellow container">
+        <div id="icone_info_footer" class="footer-desktop-info item">
+            <div class="col-6">
+                <img alt="livraison gratuite" class="icone-footer-desk-truck"
                      src="{{asset('storage/element_ressource/icones/footer_truck_ylw.png')}}"/>
                 <p class="text-footer-desk">Livraison gratuite dès 59€</p>
             </div>
-            <div>
-                <img alt="paiement sécurisé" class="icone-footer-desk"
+            <div class="col-6">
+                <img alt="paiement sécurisé" class="icone-footer-desk-lock"
                      src="{{asset('storage/element_ressource/icones/footer_lock_ylw.png')}}"/>
                 <p class="text-footer-desk">Paiement 100% sécurisé</p>
             </div>
-            <div>
-                <img alt="livraison rapide" class="icone-footer-desk"
+            <div class="col-6">
+                <img alt="livraison rapide" class="icone-footer-desk-clock"
                      src="{{asset('storage/element_ressource/icones/footer_clock_ylw.png')}}"/>
                 <p class="text-footer-desk">Livré en 5 à 7 jours</p>
             </div>
 
         </div>
-        <div class="social_media_desktop">
-            <i class="fab fa-pinterest-p"><a href="http://www.pinterest.com"></a></i>
+        <div id="icone-sociale_footer" class="col-6 social_media_desktop">
+           <div class="icone-pinterest"> <i class="fab fa-pinterest-p"><a href="http://www.pinterest.com"></a></i></div>
             <i class="fab fa-linkedin-in"><a href="http://www.linkedin.fr"></a></i>
             <i class="fab fa-facebook-f"><a href="http://www.facebook.fr"></a></i>
             <i class="fab fa-instagram"><a href="http://www.instagram.com"></a></i>
@@ -59,6 +59,7 @@
             </div>
 
             <div class="mentions-droite">
+                <h3>Informations légales</h3>
                 <p>Mentions Légales</p>
                 <p>Conditions générales de vente</p>
                 <p>Protections des données</p>

@@ -22,7 +22,6 @@
 
 @include('component.button')
 
-@include('component.footer-mobile')
 @include('component.footer-desktop')
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
