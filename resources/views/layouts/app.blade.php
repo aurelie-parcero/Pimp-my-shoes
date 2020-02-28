@@ -16,7 +16,7 @@
 
 @include('component.button')
 
-@yield('contenu')
+@yield('page.contenu')
 
 @include('component.footer-mobile')
 

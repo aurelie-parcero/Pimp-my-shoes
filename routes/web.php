@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('page/welcome');
+    return view('layouts.app');
 });
 
 Route::get('/product/{id}', function ($id) {
