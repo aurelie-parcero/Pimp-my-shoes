@@ -1,15 +1,15 @@
 <header>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark banner" >
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="{{ asset('logo/header_mobile_update.png') }}" class="posLogo"></a>
+        <a class="navbar-brand" href="{{url('/')}}"><img src="{{ asset('logo/header_mobile_update.png') }}" class="posLogo"></a>
 
 
         <ul class="navbar-nav" style="justify-content: flex-end; align-items: center">
             <li class="nav-item paddingr20">
-                <a class="nav-link" href="#"><i class="far fa-envelope fa-2x" style="padding-top: 7px"></i></a>
+                <a class="nav-link" href="{{url('/contact')}}"><i class="far fa-envelope fa-2x" style="padding-top: 7px"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-bag fa-2x" style="padding-top: 5px"></i></a>
+                <a class="nav-link" href="{{'/panier'}}"><i class="fas fa-shopping-bag fa-2x" style="padding-top: 5px"></i></a>
             </li>
             <li>
                 <!-- Toggler/collapsibe Button -->
