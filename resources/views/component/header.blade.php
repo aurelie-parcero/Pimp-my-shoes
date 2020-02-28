@@ -1,8 +1,10 @@
 <header>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark banner" >
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
     <a class="navbar-brand" href="#"><img src="{{ asset('storage/element_ressource/logo/header_mobile_update.png') }}"
                                           style="height:157px; width: 189px; position: absolute; margin-top: -25px; margin-left: -25px"></a>
+    <a class="navbar-brand" href="#"><img src="{{ asset('logo/header_mobile_police_blanche.png') }}"
+                                          style="width:150px;"/></a>
 
 
         <ul class="navbar-nav" style="justify-content: flex-end; align-items: center">
