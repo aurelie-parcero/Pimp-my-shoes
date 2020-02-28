@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-/* Footer Mobile */
+/* Footer */
 footer {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ footer {
 
 .border_footer {
     border-top: #d6d6d6 1px solid;
-    width: 93%;
+    margin: auto 30px 200px 30px;
 
 }
 
@@ -83,13 +83,13 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     font-family: "Ailerons", sans-serif;
-    padding: 10px 0;
+    padding: 10px 200px;
     text-align: center;
     font-size: 14px;
 
 }
 .mentions_bas_page p {
-
+    font-family: 'Orkney Light', sans-serif;
     padding: 0 10px;
 }
 .mention-border {
@@ -102,41 +102,51 @@ footer {
 
 /*Footer Desktop */
 @media only screen  and (min-width: 767px) {
+    .text-footer-desk{
+        font-size: 12px;
+        color: #E8A14A;
+    }
+    .footer-desk-yellow{
+        margin-bottom: ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     #icone-sociale_footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    #icone_info_footer {
+    i{
+        font-size: 50px;
+        color: #E8A14A;
+    }
+    .footer-desktop-info {
+        text-align: center;
         display: flex;
         flex-flow: row;
-        align-self: flex-start;
+       justify-content: space-around;
+
     }
     #icone_sociale_footer {
         display: flex;
         flex-flow: row;
         align-self: flex-end;
     }
+
+    .icone-footer-desk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
     h3 {font-size: 25px}
-
-    .icone-footer-desk-truck {
-        max-height: 100px;
-        max-width: 100px;
-
-    }
-    .icone-footer-desk-lock {
-        max-height: 100px;
-        max-width: 100px;
-
-    }
-    .icone-footer-desk-clock {
-        max-height: 100px;
-        max-width: 100px;
-
-    }
     .logo-footer-desk{
         height: 70px;
         width: 60%;
     }
+
 }
 /* Fin Footer Desktop */
 
