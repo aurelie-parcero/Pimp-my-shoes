@@ -14,6 +14,8 @@
 
 @include('component.header')
 
+@yield('titre')
+
 @yield('contenu')
 
 @include('component.button')
