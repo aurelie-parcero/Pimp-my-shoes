@@ -11,17 +11,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
     <link rel="stylesheet" href="<?php echo asset('style.css')?>" type="text/css">
+    <link rel="stylesheet" href="{{ asset('style.css')}}" type="text/css">
     <title>@yield('title')</title>
 </head>
 <body>
 
 @include('component.header')
 
-@include('component.button')
+@yield('titre')
 
 @yield('contenu')
 
+@include('component.button')
+
 @include('component.footer-mobile')
+@include('component.footer-desktop')
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

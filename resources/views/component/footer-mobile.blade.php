@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class="container border_footer_large">
+        <div class="container border_footer">
         </div>
 
 
@@ -47,7 +47,5 @@
 </footer>
 
 
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/b0864c5c2c.js"></script>
 
-</body>
-</html>
+

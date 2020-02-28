@@ -1,23 +1,33 @@
 @font-face {
     font-family: "Orkney Light";
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.ttf") format("ttf");
+    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.ttf") format("ttf"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.otf") format("otf"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.woff") format("woff"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.woff2") format("woff2"),
+    url("storage/element_ressource/Polices/Orkney/Orkney Light.eot") format("eot");
 }
 
 @font-face {
-    font-family: "Ailerons";
-    src: url("storage/element_ressource/Polices/Ailerons/Ailerons-Regular.otf") format("otf");
+    font-family: 'aileronregular';
+    src: url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.eot');
+    src: url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.woff') format('woff'),
+    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.ttf') format('truetype'),
+    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Footer Mobile */
-.footer-mobile {
+footer {
     margin: 0;
     padding: 0;
-    font-family: 'Orkney Light';
+    font-family: 'Orkney Light', sans-serif;
 }
 
 .border_footer {
     border-top: #d6d6d6 1px solid;
-    width: 85%;
+    width: 93%;
 
 }
 
@@ -37,6 +47,10 @@
 
 .footer-blue {
     background-color: #183549;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     margin: 0;
     padding: 0;
     color: white;
@@ -63,20 +77,25 @@
     margin: 5px;
 
 }
-
-.border_footer_large {
-    border-top: #d6d6d6 1px solid;
-    width: 92%;
+.text-footer-mobile{
+    padding: 5px;
 }
+
 .mentions_bas_page {
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: "Ailerons";
-    padding: 10px 5px;
-}
+    font-family: "Ailerons", sans-serif;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
 
+}
+.mentions_bas_page p {
+
+    padding: 0 10px;
+}
 .mention-border {
     border-left: #d6d6d6 1px solid;
     border-right: #d6d6d6 1px solid;
@@ -85,12 +104,30 @@
 
 /*Fin Footer Mobile */
 
+/*Footer Desktop */
+
+.social_media_desktop {
+    color: #E8A14A;
+}
+
+.footer-desktop-info{
+    border-right: #d6d6d6 1px solid;
+
+}
+
+.icone-footer-desk {
+    max-height: 39px;
+    max-width: 39px;
+}
+
+/* Fin Footer Desktop */
+
 /*Bouton retour haut*/
 
 .bouton-haut {
-    position: fixed;
-    right: 10px;
-    padding-top: 100px;
+    text-align: right;
+    padding-bottom: 10px;
+    margin-right: 10px;
 }
 
 /* Header styles
@@ -177,3 +214,4 @@ path#middle {
 }
 
 /*------------------------------------------------------------------------------------ */
+
