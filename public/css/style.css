@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Orkney Light";
-    src: url("storage/element_ressource/Polices/Orkney/Orkney Light.ttf") format("ttf"),
-    url("storage/element_ressource/Polices/Orkney/Orkney Light.otf") format("otf"),
-    url("storage/element_ressource/Polices/Orkney/Orkney Light.woff") format("woff"),
-    url("storage/element_ressource/Polices/Orkney/Orkney Light.woff2") format("woff2"),
-    url("storage/element_ressource/Polices/Orkney/Orkney Light.eot") format("eot");
+    src: url("public/fonts/Orkney/Orkney Light.ttf") format("ttf"),
+    url("public/fonts/Orkney/Orkney Light.otf") format("otf"),
+    url("public/fonts/Orkney/Orkney Light.woff") format("woff"),
+    url("public/fonts/Orkney/Orkney Light.woff2") format("woff2"),
+    url("public/fonts/Orkney/Orkney Light.eot") format("eot");
 }
 
 @font-face {
     font-family: 'aileronregular';
-    src: url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.eot');
-    src: url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.woff') format('woff'),
-    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.ttf') format('truetype'),
-    url('storage/element_ressource/Polices/Ailerons/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    src: url('public/fonts/Ailerons/Aileron-Regular-webfont.eot');
+    src: url('public/fonts/Ailerons/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('public/fonts/Ailerons/Aileron-Regular-webfont.woff') format('woff'),
+    url('public/fonts/Ailerons/Aileron-Regular-webfont.ttf') format('truetype'),
+    url('public/fonts/Ailerons/Aileron-Regular-webfont.svg#aileronregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -137,7 +137,6 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
 
-
 }
 
 @media (min-width: 768px){
@@ -146,11 +145,12 @@ footer {
     }
 }
 
+
 .slogan {
     color: rgba(255, 255, 255, 1)!important;
     bottom: 10px;
     position: absolute;
-    font-family: ;
+    font-family: "Ailerons", sans-serif;
     font-size: xx-large;
 }
 
@@ -159,7 +159,7 @@ footer {
 }
 
 .banner{
-    background-image: url(storage/element_ressource/images/backgroundfilter.png);
+    background-image: url(../images/backgroundfilter.png);
     background-size: cover;
     background-position: center;
     height: 396px;
@@ -217,5 +217,17 @@ path#middle {
     stroke-dasharray: 1px, 220px;
 }
 
-/*------------------------------------------------------------------------------------ */
 
+svg {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/*------------------------------------------------------------------------------------ */
