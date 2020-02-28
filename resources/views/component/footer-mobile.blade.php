@@ -22,12 +22,12 @@
         <div class="footer-mobile-info container col-10">
             <div class="element-footer-mobile">
                 <img alt="livraison" class="icone-footer"
-                     src="{{asset('storage/element_ressource/icones/footer_truck.png')}}"/>
+                     src="{{asset('icones/footer_truck.png')}}"/>
                 <p class="text-footer-mobile">Livraison gratuite dès 59€</p>
             </div>
             <div class="element-footer-mobile">
                 <img alt="sécurisé" class="icone-footer"
-                     src="{{asset('storage/element_ressource/icones/footer_lock.png')}}"/>
+                     src="{{asset('icones/footer_lock.png')}}"/>
                 <p class="text-footer-mobile">Paiement 100% sécurisé</p>
             </div>
         </div>
