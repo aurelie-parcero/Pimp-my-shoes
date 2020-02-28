@@ -6,7 +6,7 @@ use App\Http\Controllers;
 
 class ControllerAccueil
 {
-    public function ViewAccueil() {
+    public function viewAccueil() {
         return view('page/accueil');
     }
 }

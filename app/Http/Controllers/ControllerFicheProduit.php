@@ -6,7 +6,7 @@ use App\Http\Controllers;
 
 class ControllerFicheProduit
 {
-    public function ViewFicheProduit() {
+    public function viewFicheProduit() {
         return view('page/fiche-produit');
     }
 }

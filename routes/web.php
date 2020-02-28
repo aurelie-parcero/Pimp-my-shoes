@@ -1,9 +1,9 @@
 <?php
 
-Route::get('/', 'ControllerAccueil@ViewAccueil');
+Route::get('/', 'ControllerAccueil@viewAccueil');
 
-Route::get('/contact', 'ControllerContact@ViewContact');
+Route::get('/contact', 'ControllerContact@viewContact');
 
-Route::get('/fiche-produit', 'ControllerFicheProduit@ViewFicheProduit');
+Route::get('/fiche-produit', 'ControllerFicheProduit@viewFicheProduit');
 
-Route::get('/panier', 'ControllerPanier@ViewPanier');
+Route::get('/panier', 'ControllerPanier@viewPanier');

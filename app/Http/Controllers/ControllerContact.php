@@ -6,7 +6,7 @@ use App\Http\Controllers;
 
 class ControllerContact
 {
-    public function ViewContact() {
+    public function viewContact() {
         return view('page/contact');
     }
 }

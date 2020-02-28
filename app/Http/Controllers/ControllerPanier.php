@@ -6,7 +6,7 @@ use App\Http\Controllers;
 
 class ControllerPanier
 {
-    public function ViewPanier() {
+    public function viewPanier() {
         return view('page/panier');
     }
 }
