@@ -1,10 +1,8 @@
 <header>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#"><img src="{{ asset('storage/element_ressource/logo/header_mobile_update.png') }}"
-                                          style="height:157px; width: 189px; position: absolute; margin-top: -25px; margin-left: -25px"></a>
-    <a class="navbar-brand" href="#"><img src="{{ asset('logo/header_mobile_police_blanche.png') }}"
-                                          style="width:150px;"/></a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark banner" >
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="{{ asset('logo/header_mobile_update.png') }}"
+                                              style="height:157px; width: 189px; position: absolute; margin-top: -25px; margin-left: -25px"></a>
 
 
         <ul class="navbar-nav" style="justify-content: flex-end; align-items: center">
@@ -26,22 +24,21 @@
             </li>
         </ul>
 
-    <!-- Navbar links -->
+        <!-- Navbar links -->
 
-    <div class="collapse navbar-collapse text-right" id="collapsibleNavbar">
-        <ul style="flex-direction: column; margin-top:-100px" class="navbar-nav ml-auto flex-nowrap d-md-none">
-            <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item ">Femme</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">Homme</a>
-            </li>
-        </ul>
-    </div>
+        <div class="collapse navbar-collapse text-right" id="collapsibleNavbar">
+            <ul style="flex-direction: column; margin-top:-100px" class="navbar-nav ml-auto flex-nowrap d-md-none">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item ">Femme</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Homme</a>
+                </li>
+            </ul>
+        </div>
 
-    <a class="navbar-nav; nav-link; slogan">
-        Be unique<br> Be you<br> Pimp your shoes
-    </a>
-</nav>
+        <a class="navbar-nav; nav-link; slogan">
+            Be unique<br> Be you<br> Pimp your shoes
+        </a>
+    </nav>
 </header>
-
