@@ -71,5 +71,5 @@
 </footer>
 
 
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/b0864c5c2c.js"></script>
+
 
