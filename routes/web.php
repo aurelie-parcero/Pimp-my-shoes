@@ -4,15 +4,15 @@ Route::get('/', function () {
     return view('page/accueil');
 });
 
-Route::get('/', function () {
+Route::get('/contact', function () {
     return view('page/contact');
 });
 
-Route::get('/', function () {
+Route::get('/fiche-produit', function () {
     return view('page/fiche-produit');
 });
 
-Route::get('/', function () {
+Route::get('/panier', function () {
     return view('page/panier');
 });
 
