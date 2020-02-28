@@ -4,26 +4,26 @@
 
 @section('introduction')
 
-    <div class="wrapper container-fluid">
-
-            <div class="item">
+    <div class="wrapper container">
+        <div class="row">
+            <div class="item col-sm-12 col-md-12 col-lg-4">
                 <div class="polaroid"><img src="{{asset('images/stanwhite.png')}}">
                     <div class="caption">Choisis ta chaussure</div>
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item col-sm-12 col-md-12 col-lg-4">
                 <div class="polaroid"><img src="{{asset('images/stancouleur.jpg')}}">
                     <div class="caption">Personnalise-la</div>
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item col-sm-12 col-md-12 col-lg-4">
                 <div class="polaroid"><img src="{{asset('images/livraisonshoes.png')}}">
                     <div class="caption">Fai-toi livrer!</div>
                 </div>
             </div>
-
+        </div>
 
     </div>
 
@@ -37,34 +37,34 @@
         <div class="row">
             <div class="block-produit col-sm-12 col-md-12 col-lg-6">
                 <img class="img-produit-catalogue" src="{{asset('images/stan.png')}}"/>
-                <p>A partir de </p>
+                <p>A partir de 59€</p>
                 <button type="button">Personnaliser</button>
             </div>
             <div class="block-produit">
                 <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6" src="{{asset('images/converse.png')}}"/>
-                <p>A partir de </p>
+                <p>A partir de 59€</p>
                 <button type="button">Personnaliser</button>
             </div>
             <div class="block-produit">
                 <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6" src="{{asset('images/escarpin.png')}}"/>
-                <p>A partir de </p>
+                <p>A partir de 59€</p>
                 <button type="button">Personnaliser</button>
             </div>
             <div class="block-produit">
                 <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6"
                      src="{{asset('images/espadrille.png')}}"/>
-                <p>A partir de </p>
+                <p>A partir de 59€</p>
                 <button type="button">Personnaliser</button>
             </div>
             <div class="block-produit">
                 <img class="img-produit-catalogue" src="{{asset('images/femmeboot.png')}}"/>
-                <p>A partir de }</p>
+                <p>A partir de 59€</p>
                 <button type="button">Personnaliser</button>
             </div>
             <div class="block-produit">
                 <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6"
                      src="{{asset('images/chaussurehomme.png')}}"/>
-                <p>A partir de</p>
+                <p>A partir de 59€</p>
                 <button type="button">Personnaliser</button>
             </div>
         </div>
