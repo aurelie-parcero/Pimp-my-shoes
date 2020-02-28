@@ -10,7 +10,7 @@
                 <a class="nav-link" href="#"><i class="far fa-envelope fa-2x" style="padding-top: 7px"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-bag fa-2x"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-shopping-bag fa-2x" style="padding-top: 5px"></i></a>
             </li>
             <li>
                 <div class="toggler d-md-none" data-toggle="collapse" data-target="#collapsibleNavbar">
