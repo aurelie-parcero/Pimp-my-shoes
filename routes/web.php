@@ -1,18 +1,9 @@
 <?php
 
-Route::get('/', function () {
-    return view('page/accueil');
-});
+Route::get('/', 'ControllerAccueil@ViewAccueil');
 
-Route::get('/contact', function () {
-    return view('page/contact');
-});
+Route::get('/contact', 'ControllerContact@ViewContact');
 
-Route::get('/fiche-produit', function () {
-    return view('page/fiche-produit');
-});
+Route::get('/fiche-produit', 'ControllerFicheProduit@ViewFicheProduit');
 
-Route::get('/panier', function () {
-    return view('page/panier');
-});
-
+Route::get('/panier', 'ControllerPanier@ViewPanier');
