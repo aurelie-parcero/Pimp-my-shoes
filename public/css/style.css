@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-/* Footer Mobile */
+/* Footer */
 footer {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ footer {
 
 .border_footer {
     border-top: #d6d6d6 1px solid;
-    width: 93%;
+    margin: auto 30px 200px 30px;
 
 }
 
@@ -89,7 +89,7 @@ footer {
 
 }
 .mentions_bas_page p {
-
+    font-family: 'Orkney Light', sans-serif;
     padding: 0 10px;
 }
 .mention-border {
@@ -101,20 +101,51 @@ footer {
 /*Fin Footer Mobile */
 
 /*Footer Desktop */
+@media only screen  and (min-width: 767px) {
+    .text-footer-desk{
+        font-size: 12px;
+        color: #E8A14A;
+    }
+    .footer-desk-yellow{
+        margin-bottom: ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #icone-sociale_footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    i{
+        font-size: 50px;
+        color: #E8A14A;
+    }
+    .footer-desktop-info {
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+       justify-content: space-around;
 
-.social_media_desktop {
-    color: #E8A14A;
-}
+    }
+    #icone_sociale_footer {
+        display: flex;
+        flex-flow: row;
+        align-self: flex-end;
+    }
 
-.footer-desktop-info{
-    border-right: #d6d6d6 1px solid;
+    .icone-footer-desk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 40px;
+        max-width: 40px;
+    }
 
-}
-
-.icone-footer-desk {
-    max-height: 39px;
-    max-width: 39px;
-}
+    h3 {font-size: 25px}
+    .logo-footer-desk{
+        height: 70px;
+        width: 60%;
+    }
 
 /* Fin Footer Desktop */
 
@@ -146,6 +177,7 @@ footer {
     margin-top: -25px;
     margin-left: -25px
 }
+
 
 .slogan {
     color: rgba(255, 255, 255, 1)!important;
@@ -244,3 +276,111 @@ svg {
 
 
 /*------------------------------------------------------------------------------------ */
+
+
+/* Catalogue */
+/* Effet polaroïd */
+
+* {
+    box-sizing: border-box
+}
+.wrapper {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+
+}
+.polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+
+}
+.polaroid > img{
+    width: 300px;
+    height:216px;
+}
+.caption {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+}
+.item {
+
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+}
+.item .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+    transform: rotate(6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+    transform: rotate(-6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+    transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+    transform: rotate(4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+    transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+    transform: rotate(-4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+/* Fin effet Polaroïd Catalogue*/
