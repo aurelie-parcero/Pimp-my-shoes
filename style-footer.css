@@ -1,0 +1,140 @@
+
+/*--------------------------------------------------- FOOTER ---------------------------------------------------------*/
+/*-----footer commun-----*/
+.footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orkney Light', sans-serif;
+}
+
+.footer-blue {
+    background-color: #183549;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*--------------MENTIONS BAS DE PAGE commun----------------*/
+.mentions_bas_page {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Ailerons", sans-serif;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mention-border {
+    border-left: #d6d6d6 1px solid;
+    border-right: #d6d6d6 1px solid;
+    padding: 0 15px;
+}
+
+/*-----------------------FOOTER MOBILE----------------------*/
+@media only screen and (max-width: 741px){
+    .footer-desktop{
+        display : none;
+    }
+    .border_footer {
+        border-top: #d6d6d6 1px solid;
+        margin: auto 30px 50px 30px;
+        max-width: 740px;
+        width: auto;
+    }
+
+    .social_media_mobile {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 25px 15px;
+    }
+
+    .social_media_mobile i {
+
+        color: #183549;
+        font-size: 31px;
+    }
+
+    .footer-mobile-info {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .element-footer-mobile {
+        text-align: center;
+        margin-top:10px;
+
+    }
+
+    .element-footer-mobile img {
+        max-height: 43px;
+        max-width: 43px;
+        margin: 5px;
+
+    }
+    .text-footer-mobile{
+        padding: 5px;
+    }
+}
+/*Fin Footer Mobile */
+
+/*--------------------------------Footer DESKTOP-------------------------------- */
+@media only screen  and (min-width: 742px) {
+    .footer-mobile{
+        display :none;
+    }
+    .footer-desk-yellow {
+        margin : 150px 50px 75px 50px;
+        padding-top : 100px;
+        border-top : #d6d6d6 1px solid;
+        display : flex;
+        justify-content : space-around;
+        align-items : center;
+    }
+    .footer-desktop-info {
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .text-footer-desk {
+        font-size: 12px;
+        color: #E8A14A;
+    }
+    #icone-sociale_footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    i {
+        font-size: 50px;
+        color: #E8A14A;
+    }
+    .icone-footer-desk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 50px;
+        max-width: 50px;
+    }
+    /*--------footer-partie-bleu------------*/
+    .mentions-gauche{
+        padding-top: 50px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .mentions-droite{
+        padding-top: 50px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .mentions_bas_page p {
+        font-family: 'Orkney Light', sans-serif;
+    }
+}
+/* Fin Footer Desktop */
