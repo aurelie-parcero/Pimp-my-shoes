@@ -405,6 +405,51 @@ svg {
 
 /* Fin effet Polaroïd Catalogue*/
 
+/* Début fiche-produit */
+
+.fpContainer {
+    text-align: center;
+}
+
+.fpImages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fpButton {
+    border-color: #E6E6E6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fpOrangeContinuer {
+    background-color: #E8A14A;
+}
+
+.fpChoixTaille {
+    text-align: center;
+    align-items: center;
+}
+
+.fpCenter {
+    text-align: center;
+}
+
+.fpImageDuProduit {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.fpImagesPersonalisation {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Fin fiche-produit */
+
 
 /* Panier */
 
@@ -482,3 +527,15 @@ svg {
     background-color: #F4AE58;
     color: white;
 }
+
+/* Début contactez-nous */
+
+.Cformulaire {
+    text-align: center;
+}
+
+.CEnvoyer {
+    background-color: #E8A14A;
+}
+
+/* Fin contactz-nous */
