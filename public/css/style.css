@@ -18,6 +18,16 @@
     font-style: normal;
 }
 
+
+/* éléments communs page */
+
+h1 {
+
+    text-align: center;
+    font-family: "Ailerons", sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
 /* Footer */
 footer {
     margin: 0;
@@ -392,3 +402,11 @@ svg {
 }
 
 /* Fin effet Polaroïd Catalogue*/
+
+
+/* Panier */
+
+#panier i {
+    color: black;
+    font-size: 20px;
+}

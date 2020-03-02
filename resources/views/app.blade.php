@@ -22,7 +22,8 @@
 
 @include('component.header')
 @yield('introduction')
-@yield('titre')
+<h1>@yield('titre')</h1>
+
 
 @yield('contenu')
 
