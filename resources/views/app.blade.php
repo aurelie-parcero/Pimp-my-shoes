@@ -22,13 +22,13 @@
 
 @include('component.header')
 @yield('introduction')
-@yield('titre')
+<h1>@yield('titre')</h1>
+
 
 @yield('contenu')
 
 @include('component.button')
-<!--@include('component.footer-mobile')-->
-@include('component.footer-desktop')
+@include('component.footer')
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
