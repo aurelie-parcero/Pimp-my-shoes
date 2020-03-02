@@ -66,6 +66,7 @@
                     <p class="text-footer-desk">Livré en 5 à 7 jours</p>
                 </div>
             </div>
+
             <div id="icone-sociale_footer" class="col-4 social_media_desktop">
                 <i class="fab fa-pinterest-p"><a href="http://www.pinterest.com"></a></i>
                 <i class="fab fa-linkedin-in"><a href="http://www.linkedin.fr"></a></i>
