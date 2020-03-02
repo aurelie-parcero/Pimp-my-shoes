@@ -102,38 +102,43 @@ footer {
 
 /*Footer Desktop */
 @media only screen  and (min-width: 767px) {
-    .text-footer-desk{
+    .text-footer-desk {
         font-size: 12px;
         color: #E8A14A;
     }
-    .footer-desk-yellow{
+
+    .footer-desk-yellow {
         margin-bottom: ;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    #icone-sociale_footer{
+
+    #icone-sociale_footer {
         display: flex;
         justify-content: space-around;
     }
-    i{
+
+    i {
         font-size: 50px;
         color: #E8A14A;
     }
+
     .footer-desktop-info {
         text-align: center;
         display: flex;
         flex-flow: row;
-       justify-content: space-around;
+        justify-content: space-around;
 
     }
+
     #icone_sociale_footer {
         display: flex;
         flex-flow: row;
         align-self: flex-end;
     }
 
-    .icone-footer-desk{
+    .icone-footer-desk {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -141,11 +146,15 @@ footer {
         max-width: 40px;
     }
 
-    h3 {font-size: 25px}
-    .logo-footer-desk{
+    h3 {
+        font-size: 25px
+    }
+
+    .logo-footer-desk {
         height: 70px;
         width: 60%;
     }
+}
 
 /* Fin Footer Desktop */
 
@@ -384,3 +393,24 @@ svg {
 }
 
 /* Fin effet Polaroïd Catalogue*/
+
+/* Début fiche-produit */
+
+.fpImages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fpButton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fpChoixTaille {
+    text-align: center;
+    align-items: center;
+}
+
+.fpCenter {
+    text-align: center;
+}
