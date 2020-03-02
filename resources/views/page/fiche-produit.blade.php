@@ -6,11 +6,11 @@
 
 @section('contenu')
     <div class="fpContainer">
-        <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImageDuProduit">
+        <img src="{{asset('images/stanwhite.jpg')}}" alt="chaussure" class="fpImageDuProduit">
         <div class="fpImages">
-            <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
-            <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
-            <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
+            <img src="{{asset('images/stanwhite.jpg')}}" alt="chaussure" class="fpImagesPersonalisation">
+            <img src="{{asset('images/stanwhite.jpg')}}" alt="chaussure" class="fpImagesPersonalisation">
+            <img src="{{asset('images/stanwhite.jpg')}}" alt="chaussure" class="fpImagesPersonalisation">
         </div><br /><br />
         <div class="fpButton">
             <button name="Personaliser" type="button">Personaliser</button>

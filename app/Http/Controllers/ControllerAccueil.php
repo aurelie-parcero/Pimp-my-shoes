@@ -10,7 +10,6 @@ class ControllerAccueil extends Controller
     public function viewAccueil() {
 
         $catalogue = DB::select('select * from catalogue');
-        dump($catalogue);
         return view('page/accueil', ['catalogue' => $catalogue]);
     }
 }
