@@ -405,6 +405,23 @@ svg {
 
 /* Fin effet Polaroïd Catalogue*/
 
+/* Liste produits catalogue */
+
+.catalogue {
+    align-items: center;
+}
+
+.block-produit img {
+    max-width: 200px;
+}
+
+.block-produit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Début fiche-produit */
 
 .fpContainer {
@@ -463,19 +480,21 @@ svg {
     font-size: 20px;
 }
 
-#panier p {
-    text-align: center;
-}
 
 .panier-vide {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .panier-vide button {
-    max-width: 150px;
     text-align: center;
+    font-size: 13px;
+    padding: 5px 10px;
+    box-shadow: none ; !important;
+    background-color: #d6d6d6;
+    border-radius: 5px;
 }
 
 #panier h2 {
@@ -489,6 +508,8 @@ svg {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .info-panier-1 {
     display: flex;
@@ -519,14 +540,23 @@ svg {
 
 .frame-ylw {
     padding: 5px 15px;
-    border: #E8A14A;
+    border-color: #E8A14A;
     border-radius: 5px;
 }
 
 .button-ylw {
     background-color: #F4AE58;
     color: white;
+    align-items: flex-end;
 }
+
+.sous-total-panier {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+/* Fin panier */
+
 
 /* Début contactez-nous */
 

@@ -59,9 +59,9 @@
                     <p>// composition //</p>
                 </div>
             </div>
-            <div>
+            <div class="row sous-total-panier">
                 <p> Sous-total</p>
-                <div>// sous-total //</div>
+                <div class="frame-ylw">// sous-total //</div>
             </div>
 
             <button type="submit" class="frame-ylw button-ylw">Valider</button>

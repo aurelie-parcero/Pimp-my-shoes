@@ -37,42 +37,19 @@
 {{--@endsection--}}
 
 @section('contenu')
-    <div class="container">
-        <div class="row">
-            <div class="block-produit col-sm-12 col-md-12 col-lg-6">
-                <img class="img-produit-catalogue" src="{{asset('images/stan.png')}}"/>
-                <p>A partir de 59€</p>
-                <button type="button">Personnaliser</button>
-            </div>
-            <div class="block-produit">
-                <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6" src="{{asset('images/converse.png')}}"/>
-                <p>A partir de 59€</p>
-                <button type="button">Personnaliser</button>
-            </div>
-            <div class="block-produit">
-                <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6" src="{{asset('images/escarpin.png')}}"/>
-                <p>A partir de 59€</p>
-                <button type="button">Personnaliser</button>
-            </div>
-            <div class="block-produit">
-                <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6"
-                     src="{{asset('images/espadrille.png')}}"/>
-                <p>A partir de 59€</p>
-                <button type="button">Personnaliser</button>
-            </div>
-            <div class="block-produit">
-                <img class="img-produit-catalogue" src="{{asset('images/femmeboot.png')}}"/>
-                <p>A partir de 59€</p>
-                <button type="button">Personnaliser</button>
-            </div>
-            <div class="block-produit">
-                <img class="img-produit-catalogue col-sm-12 col-md-12 col-lg-6"
-                     src="{{asset('images/chaussurehomme.png')}}"/>
-                <p>A partir de 59€</p>
-                <button type="button">Personnaliser</button>
-            </div>
-        </div>
-    </div>
 
+    <div class="container row catalogue">
+        @foreach ($catalogue as $produit)
+
+            <div class="block-produit col-sm-12 col-md-12 col-lg-6">
+                <img class="img-produit-catalogue" src="{{$produit->link}}"/>
+                <div class="element-catalogue">
+                    <p>{{$produit->produit}}</p>
+                    <p>A partir de {{$produit->prix}}€</p>
+                    <button type="button">Personnaliser</button>
+                </div>
+            </div>
+        @endforeach
+    </div>
 
 @endsection
