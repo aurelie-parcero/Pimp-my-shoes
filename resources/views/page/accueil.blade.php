@@ -20,7 +20,7 @@
 
             <div class="item col-sm-12 col-md-12 col-lg-4">
                 <div class="polaroid"><img src="{{asset('images/livraisonshoes.png')}}">
-                    <div class="caption">Fai-toi livrer!</div>
+                    <div class="caption">Fais-toi livrer!</div>
                 </div>
             </div>
         </div>
@@ -40,12 +40,12 @@
 
     <div class="container row catalogue">
         @foreach ($catalogue as $produit)
-
             <div class="block-produit col-sm-12 col-md-12 col-lg-6">
                 <img class="img-produit-catalogue" src="{{$produit->link}}"/>
                 <div class="element-catalogue">
                     <p>{{$produit->produit}}</p>
                     <p>A partir de {{$produit->prix}}€</p>
+
                     <button type="button">Personnaliser</button>
                 </div>
             </div>

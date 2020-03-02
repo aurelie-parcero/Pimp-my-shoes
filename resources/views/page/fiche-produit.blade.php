@@ -5,8 +5,10 @@
 @section('titre', '')
 
 @section('contenu')
+
     <div class="fpContainer">
-        <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImageDuProduit">
+        @foreach($catalogue as $produit)
+        <img class="img-produit-catalogue" src="{{$produit->link}}" alt="" class="fpImageDuProduit">
         <div class="fpImages">
             <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
             <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
@@ -17,6 +19,9 @@
             <button name="Produit" type="button">Produit</button>
             <button name="Continuer" type="button" class="fpOrangeContinuer">Continuer</button>
         </div><br /><br />
+        <h4 class="fpCenter">Produit</h4>
+        <p>Stan Miss</p><br />
+
         <div class="fpChoixTaille">
             <p>Choisir la taille <label for="option"></label>
             <select name="option" id="option">
@@ -34,21 +39,23 @@
                 <option value="42">42</option>
                 <option value="43">43</option>
                 <option value="44">44</option>
+                <option value="45">45</option>
             </select></p>
-        </div><br /><br />
+        </div><br />
         <h4 class="fpCenter">Description</h4>
         <p>La SneakerPi, est la chaussure mixed du moment, elle s’accorde avec tous les styles et tous les genres.
-            Un classique à pimper !!</p>
+            Un classique à pimper !!</p><br />
 
         <h4>Composition</h4>
         <p>
             Tige : Cuir<br />
             Doublure : Synthétique<br />
-            Semelle int. : Textie<br />
+            Semelle int. : Textile<br />
             Semelle ext. : Caoutchouc
         </p><br />
         <div class="fpButton">
             <button name="Ajouter au panier" type="button">Ajouter au panier</button>
         </div>
+            @endforeach
     </div>
 @endsection
