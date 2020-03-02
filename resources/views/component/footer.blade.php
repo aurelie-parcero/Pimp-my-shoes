@@ -38,7 +38,7 @@
 
 
             <div class="mentions_bas_page">
-                <p>   Mentions Légales    </p>
+                <a href="page/mentions-legales"></a><p>   Mentions Légales    </p>
                 <p class="mention-border">CGV</p>
                 <p>Protections des données</p>
             </div>
