@@ -6,22 +6,20 @@
 
 @section('contenu')
 
+    @foreach($catalogue as $produit)
+
     <div class="fpContainer">
-        @foreach($catalogue as $produit)
-        <img class="img-produit-catalogue" src="{{$produit->link}}" alt="" class="fpImageDuProduit">
+        <img src="{{$produit->link}}" alt="" class="fpImageDuProduit">
         <div class="fpImages">
-            <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
-            <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
-            <img src="{{asset('images/stanwhite.jpg')}}" alt="" class="fpImagesPersonalisation">
+            <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
+            <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
+            <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
         </div><br /><br />
         <div class="fpButton">
             <button name="Personaliser" type="button">Personaliser</button>
             <button name="Produit" type="button">Produit</button>
             <button name="Continuer" type="button" class="fpOrangeContinuer">Continuer</button>
         </div><br /><br />
-        <h4 class="fpCenter">Produit</h4>
-        <p>Stan Miss</p><br />
-
         <div class="fpChoixTaille">
             <p>Choisir la taille <label for="option"></label>
             <select name="option" id="option">
@@ -43,8 +41,7 @@
             </select></p>
         </div><br />
         <h4 class="fpCenter">Description</h4>
-        <p>La SneakerPi, est la chaussure mixed du moment, elle s’accorde avec tous les styles et tous les genres.
-            Un classique à pimper !!</p><br />
+        <p>{{$produit->description}}</p>
 
         <h4>Composition</h4>
         <p>
@@ -56,6 +53,7 @@
         <div class="fpButton">
             <button name="Ajouter au panier" type="button">Ajouter au panier</button>
         </div>
-            @endforeach
     </div>
+
+    @endforeach
 @endsection
