@@ -408,7 +408,77 @@ svg {
 
 /* Panier */
 
+#panier {
+    border-bottom: #d6d6d6 solid 1px;
+    padding: 30px 0;
+}
+
 #panier i {
     color: black;
     font-size: 20px;
+}
+
+#panier p {
+    text-align: center;
+}
+
+.panier-vide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panier-vide button {
+    max-width: 150px;
+    text-align: center;
+}
+
+#panier h2 {
+    font-size: 20px;
+}
+
+.panier-contenu {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-panier-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.bouton-quantite {
+    display: flex;
+    flex-direction: row;
+}
+
+.case-prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.panier-compo {
+    text-align: left;
+}
+
+.frame-ylw {
+    padding: 5px 15px;
+    border: #E8A14A;
+    border-radius: 5px;
+}
+
+.button-ylw {
+    background-color: #F4AE58;
+    color: white;
 }
