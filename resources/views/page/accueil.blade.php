@@ -46,7 +46,7 @@
                 <div class="element-catalogue">
                     <p>{{$produit->produit}}</p>
                     <p>A partir de {{$produit->prix}}€</p>
-                    <button type="button">Personnaliser</button>
+                    <button type="button"><a href="/fiche-produit/{{$produit->id}}">Personnaliser</a></button>
                 </div>
             </div>
         @endforeach
