@@ -37,19 +37,16 @@
 {{--@endsection--}}
 
 @section('contenu')
-
-    <div class="container row catalogue">
-        @foreach ($catalogue as $produit)
-
+    @foreach($products as $product)
+        <div class="container row catalogue">
             <div class="block-produit col-sm-12 col-md-12 col-lg-6">
-                <img class="img-produit-catalogue" src="{{$produit->link}}" alt="image produit"/>
+                <img class="img-produit-catalogue" src="{{ $product->link }}" alt="image produit"/>
                 <div class="element-catalogue">
-                    <p>{{$produit->produit}}</p>
-                    <p>A partir de {{$produit->prix}}€</p>
-                    <button type="button"><a href="/fiche-produit/{{$produit->id}}">Personnaliser</a></button>
+                    <p>{{ $product->produit }}</p>
+                    <p>A partir de {{ $product->prix }}€</p>
+                    <button type="button"><a href="/fiche-produit/{{ $product->id }}">Personnaliser</a></button>
                 </div>
             </div>
-        @endforeach
-    </div>
-
+        </div>
+    @endforeach
 @endsection
