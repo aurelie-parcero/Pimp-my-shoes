@@ -9,7 +9,7 @@
     @foreach($catalogue as $produit)
 
     <div class="fpContainer">
-        <img src="{{$produit->link}}" alt="" class="fpImageDuProduit">
+        <img src="{{asset($produit->link)}}" alt="" class="fpImageDuProduit">
         <div class="fpImages">
             <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
             <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
