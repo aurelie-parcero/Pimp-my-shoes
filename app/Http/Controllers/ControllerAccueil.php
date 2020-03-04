@@ -12,13 +12,13 @@ class ControllerAccueil extends Controller
 
         $products = Product::all()->sortByDesc('produit');
 
-        return view('page.accueil')->with('products', $products);
+        return view('page.liste-produit-nom')->with('products', $products);
     }
 
     public function viewAccueilPrixCroissant(Product $products) {
 
         $products = Product::all()->sortBy('prix');
 
-        return view('page.accueil')->with('products', $products);
+        return view('page.liste-produit-prix')->with('products', $products);
     }
 }
