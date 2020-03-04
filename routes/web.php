@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'ControllerAccueil@viewAccueil');
+Route::get('/', 'ControllerAccueil@viewAccueilParNom');
 
 if ($_POST == 'name') {
 

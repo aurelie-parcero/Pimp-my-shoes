@@ -3,24 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 use App\Product;
+use Illuminate\Support\Facades\DB;
 
 class ControllerAccueil extends Controller
 {
-    public function viewAccueil(Product $products) {
-        $products = Product::all();
-        return view('page/accueil')->with('products', $products);
+    public function viewAccueilParNom(Product $products) {
+
+        $products = Product::all()->sortByDesc('produit');
+
+        return view('page.accueil')->with('products', $products);
     }
 
-    public function viewByName(Product $products) {
+    public function viewAccueilPrixCroissant(Product $products) {
 
-        $products = Product::all()->sortByDESC('name');
-        return view('page/accueil')->with('products', $products);
-    }
+        $products = Product::all()->sortBy('prix');
 
-    public function viewByPrice(Product $products) {
-        $products = Product::all()->sortBy('price');
-        return view('page/accueil')->with('products', $products);
+        return view('page.accueil')->with('products', $products);
     }
 }

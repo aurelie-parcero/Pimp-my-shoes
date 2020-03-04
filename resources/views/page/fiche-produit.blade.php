@@ -7,13 +7,12 @@
 @section('contenu')
 
     @foreach($products as $product)
-
     <div class="fpContainer">
-        <img src="{{$produit->link}}" alt=" " class="fpImageDuProduit">
+        <img src="{{ $product->link }}" alt="" class="fpImageDuProduit">
         <div class="fpImages">
-            <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
-            <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
-            <img src="{{$produit->link}}" alt="" class="fpImagesPersonalisation">
+            <img src="{{ $product->link }}" alt="" class="fpImagesPersonalisation">
+            <img src="{{ $product->link }}" alt="" class="fpImagesPersonalisation">
+            <img src="{{ $product->link }}" alt="" class="fpImagesPersonalisation">
         </div><br /><br />
         <div class="fpButton">
             <button name="Personaliser" type="button">Personaliser</button>
@@ -40,7 +39,7 @@
             </select></p>
         </div><br /><br />
         <h4 class="fpCenter">Description</h4>
-        <p>{{$produit->description}}</p>
+        <p>{{ $product->description }}</p>
 
         <h4>Composition</h4>
         <p>

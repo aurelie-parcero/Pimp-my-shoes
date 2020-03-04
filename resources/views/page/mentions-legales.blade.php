@@ -2,7 +2,7 @@
 
 @section('title', 'Mentions Légales')
 
-@section('title', 'Mentions Légales')
+@section('titre', 'Mentions Légales')
 
 @section('contenu')
     <div id = "mention">
