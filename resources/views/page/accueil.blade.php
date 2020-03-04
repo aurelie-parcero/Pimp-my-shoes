@@ -38,18 +38,28 @@
 
 @section('contenu')
 
+    <form method="post">
+        <label for="filter">Trier par:</label>
+        <button type="submit">
+            <select name="filter">
+                <option selected value="">--Veuillez choisir une option--</option>
+                <option value="name">Nom</option>
+                <option value="price">Prix</option>
+            </select>
+        </button>
+    </form>
+
     <div class="container row catalogue">
-        @foreach ($catalogue as $produit)
+        @foreach ($products as $product)
 
             <div class="block-produit col-sm-12 col-md-12 col-lg-6">
-                <img class="img-produit-catalogue" src="{{$produit->link}}"/>
+                <img class="img-produit-catalogue" src="{{$product->img_url}}"/>
                 <div class="element-catalogue">
-                    <p>{{$produit->produit}}</p>
-                    <p>A partir de {{$produit->prix}}€</p>
-                    <button type="button"><a href="/fiche-produit/{{$produit->id}}">Personnaliser</a></button>
+                    <p>{{$product->name}}</p>
+                    <p>A partir de {{$product->price}}€</p>
+                    <button type="button"><a href="/fiche-produit/{{$product->id}}">Personnaliser</a></button>
                 </div>
             </div>
         @endforeach
     </div>
-
 @endsection
