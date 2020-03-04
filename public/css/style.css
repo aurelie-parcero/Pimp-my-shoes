@@ -50,8 +50,13 @@ h1 {
     justify-content: space-around;
     font-family: "Ailerons", sans-serif;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
+}
+
+.mentions_bas_page h3 {
+
+    font-size: 1.5rem;
 }
 
 .mention-border {
