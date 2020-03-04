@@ -2,14 +2,9 @@
 
 Route::get('/', 'ControllerAccueil@viewAccueilParNom');
 
-if ($_POST == 'name') {
+Route::get('/nom', 'ControllerAccueil@viewAccueilParNom');
 
-    Route::get('/', 'ControllerAccueil@viewByName');
-
-} elseif ($_POST == 'price') {
-
-    Route::get('/', 'ControllerAccueil@viewByPrice');
-}
+Route::get('/prix', 'ControllerAccueil@viewAccueilPrixCroissant');
 
 Route::get('/contact', 'ControllerContact@viewContact');
 
