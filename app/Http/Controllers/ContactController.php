@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers;
 
-class ControllerContact extends Controller
+class ContactController extends Controller
 {
     public function viewContact() {
         return view('page/contact');

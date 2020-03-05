@@ -151,13 +151,17 @@ h1 {
     .icone-footer-desk {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
     }
 
-    .icone-footer-desk img{
-        max-width: 60px;
-        max-height: 60px;
+    .icone-footer-desk img {
+        max-height: 3rem;
+        max-width: 3rem;
+        margin: auto;
+    }
+    .icone-footer-desk p {
+        margin-top: 1rem;
+        max-width: 8rem;
     }
     /*--------footer-partie-bleu------------*/
     .mentions-gauche{
