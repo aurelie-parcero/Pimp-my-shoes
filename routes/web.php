@@ -1,16 +1,21 @@
 <?php
 
-Route::get('/', 'ControllerAccueil@viewAccueilParNom');
+Route::get('/', 'AccueilController@viewAccueilParNom');
 
-Route::get('/nom', 'ControllerAccueil@viewAccueilParNom');
+Route::get('/nom', 'AccueilController@viewAccueilParNom');
 
-Route::get('/prix', 'ControllerAccueil@viewAccueilPrixCroissant');
+Route::get('/prix', 'AccueilController@viewAccueilPrixCroissant');
 
-Route::get('/contact', 'ControllerContact@viewContact');
+Route::get('/contact', 'ContactController@viewContact');
 
-Route::get('/fiche-produit/{id}', 'ControllerFicheProduit@viewFicheProduit');
+Route::get('/fiche-produit/{id}', 'FicheProduitController@viewFicheProduit');
 
-Route::get('/panier', 'ControllerPanier@viewPanier');
+Route::get('/panier', 'PanierController@viewPanier');
 
-Route::get('/mentions-legales', 'ControllerMentionsLegales@viewMentionsLegales');
+Route::get('/mentions-legales', 'MentionsLegalesController@viewMentionsLegales');
 
+Route::get('/admin', 'AdminController@viewAdmin')->name ('insert');
+
+//test route pour upload une image
+//Route :: get ('/admin' , 'AdminController@viewAdmin') -> name ('admin');
+//Route :: post ('/admin' , 'AdminController@viewAdminPost') -> name ('admin.post');

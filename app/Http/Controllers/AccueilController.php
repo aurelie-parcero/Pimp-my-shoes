@@ -6,7 +6,7 @@ use App\Http\Controllers;
 use App\Product;
 use Illuminate\Support\Facades\DB;
 
-class ControllerAccueil extends Controller
+class AccueilController extends Controller
 {
     public function viewAccueilParNom(Product $products) {
 
