@@ -39,4 +39,23 @@ class AdminController extends Controller
     {
 
     }
+
+    //test code pour upload une image
+//    public function viewAdminPost()
+//    {
+//        $request->validate
+//        ([
+//            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+//        ]);
+//
+//        $imageName = time().'.'.$request->image->extension();
+//
+//        $request->image->move(public_path('images/uploaded'), $imageName);
+//
+//        return back()
+//            ->with('success','You have successfully upload a new product.')
+//            ->with('image',$imageName);
+//
+//    }
+
 }

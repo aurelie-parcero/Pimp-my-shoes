@@ -18,9 +18,9 @@ Route::get('/admin', 'AdminController@viewAdmin');
 
 Route::post('/admin', 'AdminController@insert')->name('insert');
 
-Route::post('/update', 'AdminController@update');
+Route::put('/update', 'AdminController@update');
 
-Route::post('/delete', 'AdminController@delete');
+Route::delete('/delete', 'AdminController@delete');
 
 //test route pour upload une image
 //Route :: get ('/admin' , 'AdminController@viewAdmin') -> name ('admin');
