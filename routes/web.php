@@ -18,6 +18,14 @@ Route::get('/admin', 'AdminController@viewAdmin');
 
 Route::post('/admin', 'AdminController@insert')->name('insert');
 
-Route::post('/update', 'AdminController@update');
+Route::put('/fiche-produit/{id}', 'AdminController@update')->name('update');
 
-Route::post('/delete', 'AdminController@delete');
+Route::delete('/fiche-produit/{id}', 'AdminController@delete')->name('delete');
+
+
+// Sonia
+
+//Route::get('/manage', 'ManagerController@manage');
+//Route::delete('/manage/{id}','ManagerController@deletePost');
+//Route::put('/manage/{id}','ManagerController@updatePost');
+//Route::post('/manage','ManagerController@addPost');

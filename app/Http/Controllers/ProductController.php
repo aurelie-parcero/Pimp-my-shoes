@@ -12,19 +12,18 @@ class ProductController extends Controller
 
         $products = Product::all()->sortByDesc('name');
 
-        return view('page.liste-produit-nom')->with('products', $products);
+        return view('/page.accueil')->with('products', $products);
     }
 
     public function viewAccueilPrixCroissant(Product $products) {
 
         $products = Product::all()->sortBy('price');
 
-        return view('page.liste-produit-prix')->with('products', $products);
+        return view('/page.accueil')->with('products', $products);
     }
 
     public function viewFicheProduit($id) {
         $products = Product::all()->where('id', $id);
-        return view('page/fiche-produit', ['products' => $products]);
+        return view('/page.fiche-produit', ['products' => $products]);
     }
 }
-
