@@ -17,5 +17,5 @@ Route::get('/mentions-legales', 'MentionsLegalesController@viewMentionsLegales')
 Route::get('/admin', 'AdminController@viewAdmin')->name ('insert');
 
 //test route pour upload une image
-//Route :: get ('/admin' , 'AdminController@viewAdmin') -> name ('admin');
-//Route :: post ('/admin' , 'AdminController@viewAdminPost') -> name ('admin.post');
+Route :: get ('/admin' , 'AdminController@viewAdmin') -> name ('admin');
+Route :: post ('/admin' , 'AdminController@viewAdminPost') -> name ('admin.post');
