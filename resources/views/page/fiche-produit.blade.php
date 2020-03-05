@@ -52,5 +52,6 @@
             <button name="Ajouter au panier" type="button">Ajouter au panier</button>
         </div>
     </div>
+
     @endforeach
 @endsection
