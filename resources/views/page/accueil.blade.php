@@ -19,8 +19,8 @@
             </div>
 
             <div class="item col-sm-12 col-md-12 col-lg-4">
-                <div class="polaroid"><img src="{{asset('images/livraisonshoes.png')}}" alt="chaussure">
-                    <div class="caption">Fai-toi livrer!</div>
+                <div class="polaroid"><img src="{{asset('images/livraisonshoes.png')}}">
+                    <div class="caption">Fais-toi livrer!</div>
                 </div>
             </div>
         </div>
