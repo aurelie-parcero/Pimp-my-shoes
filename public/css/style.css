@@ -582,3 +582,28 @@ svg {
 }
 
 /* Fin contactz-nous */
+
+/* Formulaire Admin */
+
+.admin_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#insert_form, #update_form, #delete_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+.admin_form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
