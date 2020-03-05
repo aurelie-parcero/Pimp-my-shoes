@@ -98,12 +98,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary">Supprimer</button>
+                            <form method="post" action="/fiche-produit/{{$product->id}}">
+                                @csrf
+                                @method('delete')
+                            <button type="submit" class="btn btn-primary" id="{{$product->id}}">Supprimer</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             @endforeach
         </div>
     </div>
-
 @endsection

@@ -38,8 +38,11 @@ class AdminController extends Controller
         return back();
     }
 
-    public function delete()
+    public function delete($id)
     {
+        $product = Product::where('id', $id)->first();
+        $product->delete();
 
+        return back();
     }
 }
