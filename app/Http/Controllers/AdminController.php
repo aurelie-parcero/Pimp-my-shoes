@@ -9,34 +9,40 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function viewAdmin()
+    public function viewAdmin(Product $products)
     {
-        return view('/page.admin');
+        $products = Product::all();
+        return view('/page.admin', compact('products'));
     }
 
     public function insert()
     {
         $product = new Product();
-        $name = \request('name');
-        $description = \request('description');
-        $price = request('price');
-        $img_url = request('img_url');
-        $product->name = $name;
-        $product->description = $description;
-        $product->price = $price;
-        $product->img_url = $img_url;
+        $product->name = request('name');
+        $product->description = request('description');
+        $product->price = request('price');
+        $product->img_url = request('img_url');
         $product->save();
 
         return back();
     }
 
-    public function update()
+    public function update($id)
     {
-
+        $product = Product::where('id', $id)->first();
+        $product->name = request('name');
+        $product->description = request('description');
+        $product->price = request('price');
+        $product->img_url = request('img_url');
+        $product->save();
+        return back();
     }
 
-    public function delete()
+    public function delete($id)
     {
+        $product = Product::where('id', $id)->first();
+        $product->delete();
 
+        return back();
     }
 }

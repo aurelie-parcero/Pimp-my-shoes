@@ -422,6 +422,8 @@ svg {
 
 .catalogue {
     align-items: center;
+    justify-content: center;
+    padding: 40px 0;
 }
 
 .block-produit img {
@@ -593,7 +595,7 @@ svg {
 
 }
 
-#insert_form, #update_form, #delete_form {
+.insert_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
