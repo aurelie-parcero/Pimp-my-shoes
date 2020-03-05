@@ -38,9 +38,10 @@
 
 @section('contenu')
     @foreach($products as $product)
+        @csrf
         <div class="container row catalogue">
             <div class="block-produit col-sm-12 col-md-12 col-lg-6">
-                <img class="img-produit-catalogue" src="{{ $product->img_url }}" alt="image produit"/>
+                <img class="img-produit-catalogue" src="{{asset($product->img_url) }}" alt="image produit"/>
                 <div class="element-catalogue">
                     <p>{{ $product->name }}</p>
                     <p>A partir de {{ $product->price }}€</p>

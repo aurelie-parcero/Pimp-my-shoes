@@ -21,4 +21,10 @@ class ProductController extends Controller
 
         return view('page.liste-produit-prix')->with('products', $products);
     }
+
+    public function viewFicheProduit($id) {
+        $products = Product::all()->where('id', $id);
+        return view('page/fiche-produit', ['products' => $products]);
+    }
 }
+

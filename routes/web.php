@@ -10,14 +10,14 @@ Route::get('/contact', 'ControllerContact@viewContact');
 
 Route::get('/fiche-produit/{id}', 'ControllerFicheProduit@viewFicheProduit');
 
-Route::get('/panier', 'ControllerPanier@viewPanier');
+Route::get('/panier', 'CartController@viewPanier');
 
 Route::get('/mentions-legales', 'MentionsController@viewMentionsLegales');
 
-Route::get('/admin', 'ControllerAdmin@viewAdmin');
+Route::get('/admin', 'AdminController@viewAdmin');
 
-Route::get('/insert', 'ControllerAdmin@insert')->name('insert');
+Route::post('/admin', 'AdminController@insert')->name('insert');
 
-Route::post('/update', 'ControllerAdmin@update');
+Route::post('/update', 'AdminController@update');
 
-Route::post('/delete', 'ControllerAdmin@delete');
+Route::post('/delete', 'AdminController@delete');

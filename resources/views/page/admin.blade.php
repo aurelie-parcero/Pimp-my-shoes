@@ -9,6 +9,7 @@
         <div id="insert_form">
             <h3>Ajouter un produit</h3>
             <form action="{{Route('insert')}}" method="post">
+                @csrf
                 <label for="name">Nom du produit</label>
                 <input type="text" name="name" id="name" required>
 
