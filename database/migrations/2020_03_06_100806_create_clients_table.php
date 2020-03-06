@@ -24,7 +24,8 @@ class CreateClientsTable extends Migration
         });
 
         Schema::table('orders', function (Blueprint $table) {
-            $table->integer('client_id')->unsigned()->index();
+            $table->unsignedBigInteger('client_id');
+            $table->foreign('client_id')->references('id')->on('clients');
         });
 
     }
