@@ -14,20 +14,23 @@ class CreateClientsTable extends Migration
     public function up()
     {
         Schema::create('clients', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->unsignedBigInteger('id')->primary();
             $table->string('last_name');
             $table->string('first_name');
             $table->string('email');
             $table->string('adress');
-            $table->string('phone');
+            $table->integer('phone');
             $table->timestamps();
         });
+<<<<<<< HEAD:database/migrations/2020_03_06_100806_create_clients_table.php
 
         Schema::table('orders', function (Blueprint $table) {
             $table->unsignedBigInteger('client_id');
             $table->foreign('client_id')->references('id')->on('clients');
         });
 
+=======
+>>>>>>> dev:database/migrations/2020_03_06_135254_create_clients_table.php
     }
 
     /**
