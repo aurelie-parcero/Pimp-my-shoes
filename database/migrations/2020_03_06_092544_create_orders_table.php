@@ -20,7 +20,6 @@ class CreateOrdersTable extends Migration
             $table->integer('status');
             $table->timestamps();
         });
-
     }
 
     /**
