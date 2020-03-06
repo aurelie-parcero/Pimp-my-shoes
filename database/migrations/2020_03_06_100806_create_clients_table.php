@@ -22,7 +22,7 @@ class CreateClientsTable extends Migration
             $table->string('phone');
             $table->timestamps();
         });
-    }
+
 
     /**
      * Reverse the migrations.
