@@ -20,5 +20,4 @@ Route::post('/admin', 'AdminController@insert')->name('insert');
 
 Route::put('/fiche-produit/{id}', 'AdminController@update')->name('update');
 
-
 Route::delete('/fiche-produit/{id}', 'AdminController@delete')->name('delete');
