@@ -6,6 +6,9 @@
 
         <ul class="navbar-nav" style="justify-content: flex-end; align-items: center">
             <li class="nav-item paddingr20">
+                <a class="nav-link" href="{{url('/login')}}"><i class="far fa-user fa-2x" style="padding-top: 7px"></i></a>
+            </li>
+            <li class="nav-item paddingr20">
                 <a class="nav-link" href="{{url('/contact')}}"><i class="far fa-envelope fa-2x" style="padding-top: 7px"></i></a>
             </li>
             <li class="nav-item">

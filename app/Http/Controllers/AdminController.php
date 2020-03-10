@@ -19,8 +19,7 @@ class AdminController extends Controller
     public function viewAdmin()
     {
         $products = Product::all();
-        $user = auth()->user();
-        return view('/page.admin', ['products' => $products, 'user' => $user]);
+        return view('/page.admin', ['products' => $products]);
     }
 
     public function insert()

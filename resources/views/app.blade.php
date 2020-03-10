@@ -22,6 +22,16 @@
 
 @include('component.header')
 
+@auth
+<div class="section">
+
+    <p>Bonjour {{Auth::user()->name}}, vous êtes bien connecté.</p>
+
+    <a href="/deconnexion" class="button">Déconnexion</a>
+</div>
+
+@endauth
+
 @yield('introduction')
 <h1>@yield('titre')</h1>
 

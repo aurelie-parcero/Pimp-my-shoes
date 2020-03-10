@@ -5,12 +5,7 @@
 @section('titre', 'Administrateur')
 
 @section('contenu')
-    <div class="section">
 
-        <p>Bonjour {{$user->name}}, vous êtes bien connecté.</p>
-
-        <a href="/deconnexion" class="button">Déconnexion</a>
-    </div>
     <div class="admin_form">
         <div class="insert_form">
             <h3>Ajouter un produit</h3>
