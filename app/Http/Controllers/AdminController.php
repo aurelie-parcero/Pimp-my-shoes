@@ -16,10 +16,11 @@ class AdminController extends Controller
         $this->middleware('is_admin');
     }
 
-    public function viewAdmin(Product $products)
+    public function viewAdmin()
     {
         $products = Product::all();
-        return view('/page.admin', compact('products'));
+        $user = auth()->user();
+        return view('/page.admin', ['products' => $products, 'user' => $user]);
     }
 
     public function insert()
