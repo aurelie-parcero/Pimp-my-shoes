@@ -21,6 +21,7 @@
 {{--@yield('header')--}}
 
 @include('component.header')
+@auth
 <div class="section">
     <h1 class="title is-1">Mon compte</h1>
 
@@ -28,6 +29,7 @@
 
     <a href="/deconnexion" class="button">Déconnexion</a>
 </div>
+@endauth
 @yield('introduction')
 <h1>@yield('titre')</h1>
 
