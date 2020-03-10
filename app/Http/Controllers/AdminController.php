@@ -3,12 +3,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\Authenticate;
 use App\Product;
+use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('is_admin');
+    }
+
     public function viewAdmin(Product $products)
     {
         $products = Product::all();
