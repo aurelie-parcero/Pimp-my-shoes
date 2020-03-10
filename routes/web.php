@@ -14,10 +14,14 @@ Route::get('/panier', 'CartController@viewPanier');
 
 Route::get('/mentions-legales', 'MentionsController@viewMentionsLegales');
 
-Route::get('/admin', 'AdminController@viewAdmin');
+Route::get('/admin', 'AdminController@viewAdmin')->middleware('auth')->name('admin');
 
 Route::post('/admin', 'AdminController@insert')->name('insert');
 
 Route::put('/fiche-produit/{id}', 'AdminController@update')->name('update');
 
 Route::delete('/fiche-produit/{id}', 'AdminController@delete')->name('delete');
+
+Route::get('/deconnexion', 'LoginController@deconnexion');
+
+Auth::routes();
