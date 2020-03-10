@@ -21,15 +21,17 @@
 {{--@yield('header')--}}
 
 @include('component.header')
+
 @auth
 <div class="section">
-    <h1 class="title is-1">Mon compte</h1>
 
-    <p>Vous êtes bien connecté.</p>
+    <p>Bonjour {{Auth::user()->name}}, vous êtes bien connecté.</p>
 
     <a href="/deconnexion" class="button">Déconnexion</a>
 </div>
+
 @endauth
+
 @yield('introduction')
 <h1>@yield('titre')</h1>
 

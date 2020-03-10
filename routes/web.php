@@ -22,6 +22,6 @@ Route::put('/fiche-produit/{id}', 'AdminController@update')->name('update');
 
 Route::delete('/fiche-produit/{id}', 'AdminController@delete')->name('delete');
 
-Route::get('/deconnexion', 'LoginController@deconnexion');
+Route::get('/deconnexion', 'UserController@deconnexion');
 
 Auth::routes();

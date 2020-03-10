@@ -5,6 +5,7 @@
 @section('titre', 'Administrateur')
 
 @section('contenu')
+
     <div class="admin_form">
         <div class="insert_form">
             <h3>Ajouter un produit</h3>
