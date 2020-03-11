@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->date('date');
             $table->integer('price');
             $table->integer('status');
-            $table->unsignedBigInteger('client_id');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }

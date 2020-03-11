@@ -51,9 +51,12 @@
                 Semelle int. : Textile<br/>
                 Semelle ext. : Caoutchouc
             </p><br/>
-            <div class="fpButton">
-                <button name="Ajouter au panier" type="button">Ajouter au panier</button>
-            </div>
+
+
+                <div class="fpButton">
+                    <button name="Ajouter au panier" type="button"><a href="/panier/{{$product->id}}">Ajouter au panier</a></button>
+                </div>
+
         </div>
 
     @endforeach
