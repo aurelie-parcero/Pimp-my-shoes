@@ -26,4 +26,6 @@ Route::delete('/fiche-produit/{id}', 'AdminController@delete')->name('delete');
 
 Route::get('/deconnexion', 'UserController@deconnexion');
 
+Route::post('/register', 'RegisterController@insert');
+
 Auth::routes();

@@ -609,3 +609,15 @@ svg {
     flex-direction: column;
     padding: 10px 0;
 }
+
+/* Login && Register */
+
+.register-button {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+
