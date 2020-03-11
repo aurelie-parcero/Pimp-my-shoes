@@ -19,6 +19,5 @@ class isAdmin
             return $next($request);
         }
         return redirect('/');
-
     }
 }
