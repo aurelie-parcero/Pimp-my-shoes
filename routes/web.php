@@ -30,4 +30,4 @@ Route::post('/register', 'RegisterController@insert');
 
 Auth::routes();
 
-Route::get('/api', 'ProductController@api');
+

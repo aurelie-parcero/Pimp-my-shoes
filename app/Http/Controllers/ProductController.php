@@ -27,8 +27,7 @@ class ProductController extends Controller
         return view('/page.fiche-produit', ['products' => $products]);
     }
 
-    public function api() {
-        $products = Product::all();
-        return $products;
+    public function index() {
+        return Product::all();
     }
 }

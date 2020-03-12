@@ -67,7 +67,8 @@
                 <div class="frame-ylw">// sous-total //</div>
             </div>
 
-            <button type="submit" class="frame-ylw button-ylw">Valider</button>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+                <script>paypal.Buttons().render('body');</script>
         </div>
     </section>
 
