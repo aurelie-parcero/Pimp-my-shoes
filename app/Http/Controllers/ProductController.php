@@ -26,4 +26,9 @@ class ProductController extends Controller
         $products = Product::all()->where('id', $id);
         return view('/page.fiche-produit', ['products' => $products]);
     }
+
+    public function api() {
+        $products = Product::all();
+        return $products;
+    }
 }

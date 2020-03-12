@@ -29,3 +29,5 @@ Route::get('/deconnexion', 'UserController@deconnexion');
 Route::post('/register', 'RegisterController@insert');
 
 Auth::routes();
+
+Route::get('/api', 'ProductController@api');
