@@ -5,18 +5,20 @@
 @section('titre', 'Votre Panier')
 
 @section('contenu')
-    <!-- Si le panier est vide -->
+    <!-- Si le panier est vide --> 
+@if(empty(Auth::user()->Product))
     <section id="panier">
         <div class="panier-vide">
             <p>
                 Votre panier est vide.
             </p>
 
-            <button id="panier-achat" type="button">Continuer mes achats</button>
+            <a href="/"><button id="panier-achat" type="button">Continuer mes achats</button></a>
         </div>
-
+@endif
         <!-- Si le panier contient un article, les div suivantes doivent être remplies -->
         <div class="container panier-contenu">
+@if(!empty(Auth::user()->Product))
             @foreach(Auth::User()->cartitems as $product)
 
                 <div class="row">
@@ -66,10 +68,10 @@
                 <p>Sous-total</p>
                 <div class="frame-ylw">// sous-total //</div>
             </div>
-
                 <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
                 <script>paypal.Buttons().render('body');</script>
         </div>
+@endif
     </section>
 
 @endsection
