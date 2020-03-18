@@ -10,7 +10,7 @@ Route::get('/contact', 'ContactController@viewContact');
 
 Route::get('/fiche-produit/{id}', 'FicheProduitController@viewFicheProduit');
 
-Route::get('/panier', 'CartItemController@viewPanier')->name("my-cart");
+Route::get('/panier', 'CartItemController@viewPanier')->middleware('auth')->name("my-cart");
 
 Route::get('/panier/{id}', 'CartItemController@insertItem')->middleware('auth')->name('insertItem');
 
