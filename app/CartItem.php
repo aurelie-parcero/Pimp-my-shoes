@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Cartitem extends Pivot
+class CartItem extends Pivot
 {
     public function products(){
         return $this->hasOne('App\Product');

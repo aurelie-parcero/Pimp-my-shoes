@@ -8,7 +8,7 @@ use App\Product;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 
-class CartitemController extends Controller
+class CartItemController extends Controller
 {
     public function viewPanier()
     {
@@ -19,13 +19,13 @@ class CartitemController extends Controller
     {
         $user = Auth::user();
         $previousQuantity = 0;
-        foreach ($user->cartitems as $product) {
+        foreach ($user->cartItems as $product) {
             if ($product->id == $id) {
                 $previousQuantity = $product->pivot->quantity;
                 break;
             }
         }
-        $user->cartitems()->sync([$id => ["quantity" => $previousQuantity + 1]]);
+        $user->cartItems()->sync([$id => ["quantity" => $previousQuantity + 1]]);
         $user->save();
         return redirect()->route('my-cart');
     }
