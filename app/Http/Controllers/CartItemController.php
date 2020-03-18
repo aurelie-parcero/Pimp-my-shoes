@@ -12,7 +12,6 @@ class CartItemController extends Controller
 {
     public function viewPanier()
     {
-
         return view('page/panier');
     }
 
