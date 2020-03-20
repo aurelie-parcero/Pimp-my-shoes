@@ -181,11 +181,24 @@ Par exemple:
 ``sudo cp /etc/nginx/sites-available/confPMS2 confDEV``
 
 * Modifier les lignes:
+
 ``root`` si le serveur doit pointer sur un autre dossier.
+
+
 ``server_name`` pour modifier l'url.
+
+
 ``listen [::]:443 ssl ipv6only=on;`` => supprimer ou mettre en commentaire cette ligne si elle est déjà présente dans un autre.
+
+
 Dans le bloc server https (le dernier): noter le bon nom sous-domaine.
 
+* Créer un lien symbolique entre ce fihcier et le dossier sites-enabled:
+
+``sudo ln -s /etc/nginx/sites-available/confDEV /etc/nginx/sites-enabled``
+
+
 * Vérifier la configuration avec ``sudo nginx -t``
+
 
 * relancer nginx ``sudo systemctl restart nginx``
