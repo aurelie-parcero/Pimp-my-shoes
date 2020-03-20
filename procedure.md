@@ -167,3 +167,25 @@ Ensuite taper `sudo systemctl restart nginx`
 Et allez dans le navigateur et taper `127.0.0.1:8080`
 
 Et voilà c'est terminé !
+
+
+
+# Créer des sous-domaines
+
+* Sur l'hébergeur, créer une nouvelle entrée dans la zone DNS, et faire pointer le sous-domaine sur l'IP du serveur.
+Par exemple: 
+<b>dev.pimp-my-shoes.com A 142.93.138.173</b>
+
+
+* Créer un nouveau fichier de configuration propre au sous-domaine dans /etc/nginx/sites-available/ en copiant le fichier du domaine principal.
+``sudo cp /etc/nginx/sites-available/confPMS2 confDEV``
+
+* Modifier les lignes:
+``root`` si le serveur doit pointer sur un autre dossier.
+``server_name`` pour modifier l'url.
+``listen [::]:443 ssl ipv6only=on;`` => supprimer ou mettre en commentaire cette ligne si elle est déjà présente dans un autre.
+Dans le bloc server https (le dernier): noter le bon nom sous-domaine.
+
+* Vérifier la configuration avec ``sudo nginx -t``
+
+* relancer nginx ``sudo systemctl restart nginx``
