@@ -5,20 +5,14 @@
 @section('titre', 'Votre Panier')
 
 @section('contenu')
-    <!-- Si le panier est vide -->
-@if(empty(Auth::user()->Product))
-    <section id="panier">
-        <div class="panier-vide">
-            <p>
-                Votre panier est vide.
-            </p>
 
-            <a href="/"><button id="panier-achat" type="button">Continuer mes achats</button></a>
-        </div>
-@endif
+    <section id="panier">
+
         <!-- Si le panier contient un article, les div suivantes doivent être remplies -->
+        @isset(Auth::user()->cartitems)
+
         <div class="container panier-contenu">
-@if(!empty(Auth::user()->Product))
+
             @foreach(Auth::User()->cartitems as $product)
 
                 <div class="row">
@@ -52,26 +46,37 @@
                 </div>
 
 
-            <div class="row panier-prix">
-                <div class="col-sm-12 case-prix">
-                    <p>Prix</p>
-                    <div class="frame-ylw">{{$product->price * $product->pivot->quantity}} € TTC</div>
+                <div class="row panier-prix">
+                    <div class="col-sm-12 case-prix">
+                        <p>Prix</p>
+                        <div class="frame-ylw">{{$product->price * $product->pivot->quantity}} € TTC</div>
+                    </div>
+                    <div class="panier-compo">
+                        <p>Composition</p>
+                        <p>Textile</p>
+                    </div>
                 </div>
-                <div class="panier-compo">
-                    <p>Composition</p>
-                    <p>Textile</p>
-                </div>
-            </div>
             @endforeach
 
-            <div class="row sous-total-panier">
-                <p>Sous-total</p>
-                <div class="frame-ylw">// sous-total //</div>
-            </div>
+                <div class="row sous-total-panier">
+                    <p>Sous-total</p>
+                    <div class="frame-ylw">// sous-total //</div>
+                </div>
                 <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
                 <script>paypal.Buttons().render('body');</script>
+            @endisset
+
+
+                <div id="panier-vide">
+                    <p> Votre panier est vide</p>
+                    <a href="/">
+                        <button id="panier-achat" type="button">Continuer mes achats</button>
+                    </a>
+
+                </div>
+
+
         </div>
-@endif
     </section>
 
 @endsection

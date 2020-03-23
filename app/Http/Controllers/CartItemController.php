@@ -12,14 +12,15 @@ class CartItemController extends Controller
 {
     public function viewPanier()
     {
-        return view('page/panier');
+        $cartitems = CartItem::all();
+        return view('page/panier', ['cartitems' => $cartitems]);
     }
 
     public function insertItem($id)
     {
         $user = Auth::user();
         $previousQuantity = 0;
-        foreach ($user->cartItems as $product) {
+        foreach ($user->cartitems as $product) {
             if ($product->id == $id) {
                 $previousQuantity = $product->pivot->quantity;
                 break;
