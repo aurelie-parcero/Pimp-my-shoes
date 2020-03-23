@@ -1,28 +1,35 @@
-# Stratégie de déploiement
+# Procédure de déploiement pimp-my-shoes.com
 
-## Objectif:
+1. Se connecter au serveur en ssh via Putty:
 
-Mettre en ligne une nouvelle version du site.
+`IP: 142.93.138.173`
 
-## Procédure:
+`pimp@PimpMyShoesServer`
 
-1. Créer un nouveau répertoire où cloner la version Git souhaitée du projet (Ne pas oublier d'installer les dépendances nécessaires etc). Pour cela, utiliser les tags pour identifier les différentes versions.
-2. Modifier le fichier de configuration dans le dossier /etc/nginx/sites-available:
+`mot de passe: voir avec le boss`
 
-  Ligne `root`: faire pointer sur le nouveau répertoire
+2. Créer un nouveau répertoire sur le serveur dans `/var/www/html/` où cloner la version Git souhaitée du projet (Ne pas oublier d'installer les dépendances nécessaires etc). Pour cela, utiliser les tags pour identifier les différentes versions.
 
-3. Vérifier la configuration: 
+* Les tags Github doivent être sous la forme:
+ `v(Numérodeversion)-année-mois-jour`
+
+3. Modifier le fichier de configuration dans le dossier /etc/nginx/sites-available:
+
+  Ligne `root`: faire pointer sur le nouveau répertoire, dossier `public`
+
+4. Vérifier la configuration: 
 `sudo nginx -t`
 
   Et relancer le serveur:
 
 `sudo systemctl restart nginx`
 
-4. Pour rollback, re-modifier la ligne `root` dans le fichier de configuration.
+5. Pour rollback, re-modifier la ligne `root` dans le fichier de configuration pour pointer vers le répertoire souhaité.
 
 
-## POC:
+## POC1:
 
+### Objectif: 
 Test de session utilisateur lors du switch sur une autre version.
 
 La session de l'utilisateur peut-elle être conservée, ceci afin de ne pas perturber les achats en cours?
