@@ -1,1 +1,2 @@
+# Stratégie de déploiement
 
