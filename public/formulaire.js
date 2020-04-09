@@ -36,13 +36,44 @@ function main() {
                 }
             });
 
-        if($('#contact-form').validate()) {
-            $('.CEnvoyer')
-                .prop('disabled', false)
-                .css('background-color', '#f4ae58');
-        }
-
     }
+
+    function checkInputs() {
+        let inputs = $('#contact-form input, textarea, #reason');
+        inputs.on('keyup click', function () {
+            let isValid = true;
+            for (let i = 0; i < inputs.length; i++) {
+                if ($(inputs[i]).val().length < 3) {
+                    isValid = false;
+                }
+            }
+            if (isValid) {
+
+                $('.CEnvoyer')
+                    .prop('disabled', false)
+                    .css('background-color', '#f4ae58');
+            } else {
+                $('.CEnvoyer')
+                    .prop('disabled', true)
+                    .css('background-color', '#d6d6d6');
+            }
+        });
+    }
+
+   checkInputs();
+
+
+
+
+    // $(".form > :input").change(function() {
+    //     let emptyFields = $('.form :input').filter(function() {
+    //         return $.trim(this.value) === "";
+    //     });
+    //
+    //     if (!emptyFields.length) {
+    //         console.log("form has been filled");
+    //     }
+    // });
 
 
 }
