@@ -8,11 +8,12 @@
 
     <div class="Cformulaire">
         <form action="" method="post" id="contact-form">
-            <label>PRÉNOM<br /><input type="text" name="firstName" required></label><br />
-            <label>NOM<br /><input type="text" name="lastName" required></label><br />
-            <label>EMAIL<br /><input type="email" name="email" placeholder="john.doe@gmail.com" required></label><br /><br />
+            <label>PRÉNOM<br /><input type="text" name="firstName" id="firstName" required></label><br />
+            <label>NOM<br /><input type="text" name="lastName" id="lastName" required></label><br />
+            <label>EMAIL<br /><input type="email" name="email" id="email"placeholder="john.doe@gmail.com" required></label><br /><br />
             <label for="reason">Raison</label>
                 <select name="reason" id="reason">
+                    <option value="">-- Veuillez sélectionner la raison --</option>
                     <option value="reason1">Une commande</option>
                     <option value="reason2">La livraison</option>
                     <option value="reason3">Un retour</option>
