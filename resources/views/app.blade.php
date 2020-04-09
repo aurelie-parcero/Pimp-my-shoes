@@ -56,6 +56,8 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 <script  src={{asset('script.js')}}></script>
+<script  src={{asset('formulaire.js')}}></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
 
 </body>
 </html>
