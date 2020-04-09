@@ -580,10 +580,12 @@ svg {
 }
 
 .CEnvoyer {
-    background-color: #E8A14A;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    padding: 5px 15px;
 }
 
-/* Fin contactz-nous */
+/* Fin contactez-nous */
 
 /* Formulaire Admin */
 
